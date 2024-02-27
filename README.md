@@ -7,4 +7,4 @@ LiDAR Fusion for Enhanced Spectral Capture and Target Resolution Advancement
     pip install hylite
 4. Run test_install.py and watch output
 
-Fusion output example https://www.hzdr.de/FWG/FWGE/Hyperclouds/CortaAtalaya.html
+Fusion   output example https://www.hzdr.de/FWG/FWGE/Hyperclouds/CortaAtalaya.html
