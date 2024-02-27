@@ -1,3 +1,6 @@
+"""
+Run this to check how hylite and everything was installed
+"""
 import hylite
 from hylite import io
 import matplotlib.pyplot as plt
