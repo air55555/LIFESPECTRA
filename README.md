@@ -8,3 +8,5 @@ LiDAR Fusion for Enhanced Spectral Capture and Target Resolution Advancement
 4. Run test_install.py and watch output
 
 Fusion   output example https://www.hzdr.de/FWG/FWGE/Hyperclouds/CortaAtalaya.html
+                        https://www.hzdr.de/FWG/FWGE/Hyperclouds/Zinnwald.html
+Old simple examples https://github.com/samthiele/hylite_demo/tree/master?tab=readme-ov-file
