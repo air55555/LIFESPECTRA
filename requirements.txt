@@ -1,0 +1,6 @@
+hylite==1.30
+matplotlib==3.7.5
+numpy==1.24.4
+ipython==8.12.3
+opencv-python==4.9.0.80
+spectral==0.23.1
