@@ -1,6 +1,3 @@
-# rotate platform
-
-from pelco_commands import *
 import socket
 import time
 
@@ -141,8 +138,3 @@ class Ptr():
     def move_to(self, hh, ll):
         cmd = self._construct_cmd('71', f'{hh}', f'{ll}')
         return self._sock._client_up(cmd)
-
-
-
-#a = Ptr().stop()
-#a#a = Ptr().move_to('4e', 'bf')

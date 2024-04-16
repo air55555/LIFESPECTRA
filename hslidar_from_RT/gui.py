@@ -1,4 +1,3 @@
-# import time
 import PySimpleGUI as sg
 import hspec_camera
 import scanner
@@ -11,11 +10,9 @@ import harvesters
 from spectral import *
 import os
 from matplotlib.ticker import NullFormatter
-# import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib
 import shutil
-#import visca_rgb
 import lidar
 from statistics import mean
 import warnings
