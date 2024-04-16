@@ -1,5 +1,5 @@
 # import time
-import PySimpleGUI as sg
+from utils import *
 import hspec_camera
 import scanner
 from math import tan, radians
@@ -61,29 +61,14 @@ def create_predefined_frame(width, height, text="sample", color=(255, 255, 255),
 
 def App():
 
-    BTN_COLOR = ('white', '#0D7377')
-    BGRND_COLOR = '#4D3E3E'
-    MINI_FONT = 'Helvetica 10 bold italic'
-    BIG_FONT = 'Helvetica 12 bold italic'
-    capture_state_flag = 0
-    videostream_windows = [
-        [sg.Image(size=(1024, 100), k='-WATERFALL'),
-         sg.VerticalSeparator(), sg.Image(size=(600, 100), k='-SONY')]
-    ]
-    videostream = [
-        [sg.Frame('', videostream_windows, font=BIG_FONT, title_location=sg.TITLE_LOCATION_TOP)],
-    ]
-    layout = [
-        [sg.Frame('VideoStream', videostream, font=BIG_FONT, title_location=sg.TITLE_LOCATION_TOP)]
-    ]
-    sg.theme('DarkBlack')
+
     window = sg.Window('Hyperspectral quality control system', layout, resizable=True, finalize=True,
                        text_justification='right', auto_size_text=False, default_element_size=(21, 1),
                        font=MINI_FONT, button_color=BTN_COLOR, element_justification='c')
     window.Maximize()
 
     cap = cv2.VideoCapture(0)
-
+    capture_state_flag = 0
     while True:
         if capture_state_flag == 0:
             ret, frame = cap.read()
