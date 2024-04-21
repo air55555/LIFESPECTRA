@@ -1,0 +1,585 @@
+[2024-04-20 13:29:05,379.379] INFO [10956] - Started server process [10168]
+[2024-04-20 13:29:05,379.379] INFO [10956] - Waiting for application startup.
+[2024-04-20 13:29:05,379.379] INFO [10956] - Application startup complete.
+[2024-04-20 13:29:05,394.394] INFO [10956] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-20 13:30:17,761.761] INFO [2060] - Started server process [8636]
+[2024-04-20 13:30:17,776.776] INFO [2060] - Waiting for application startup.
+[2024-04-20 13:30:17,776.776] INFO [2060] - Application startup complete.
+[2024-04-20 13:30:17,776.776] INFO [2060] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-20 13:30:26,871.871] INFO [2060] - GET / - 200
+[2024-04-20 13:30:26,871.871] INFO [2060] - 127.0.0.1:53551 - "GET / HTTP/1.1" 200
+[2024-04-20 13:30:26,871.871] INFO [2060] - GET / - Completed in 0.0 seconds
+[2024-04-20 13:32:02,203.203] INFO [2524] - Started server process [5456]
+[2024-04-20 13:32:02,203.203] INFO [2524] - Waiting for application startup.
+[2024-04-20 13:32:02,203.203] INFO [2524] - Application startup complete.
+[2024-04-20 13:32:02,203.203] INFO [2524] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-20 13:32:02,470.470] INFO [2524] - 127.0.0.1:53566 - "GET /logs HTTP/1.1" 500
+[2024-04-20 13:32:02,470.470] ERROR [2524] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 29, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 96, in get_last_logs
+    log_messages.extend(handler.stream.getvalue().strip().split("\n"))
+AttributeError: '_io.TextIOWrapper' object has no attribute 'getvalue'
+[2024-04-20 13:32:49,897.897] INFO [5636] - Started server process [3096]
+[2024-04-20 13:32:49,897.897] INFO [5636] - Waiting for application startup.
+[2024-04-20 13:32:49,897.897] INFO [5636] - Application startup complete.
+[2024-04-20 13:32:49,897.897] INFO [5636] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-20 13:32:50,064.064] INFO [5636] - GET /logs - 200
+[2024-04-20 13:32:50,064.064] INFO [5636] - 127.0.0.1:53574 - "GET /logs HTTP/1.1" 200
+[2024-04-20 13:32:50,064.064] INFO [5636] - GET /logs - Completed in 0.0 seconds
+[2024-04-20 13:36:35,787.787] INFO [616] - Started server process [8684]
+[2024-04-20 13:36:35,787.787] INFO [616] - Waiting for application startup.
+[2024-04-20 13:36:35,787.787] INFO [616] - Application startup complete.
+[2024-04-20 13:36:35,787.787] INFO [616] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-20 13:37:09,247.247] INFO [616] - GET / - 200
+[2024-04-20 13:37:09,247.247] INFO [616] - 127.0.0.1:53609 - "GET / HTTP/1.1" 200
+[2024-04-20 13:37:09,247.247] INFO [616] - GET / - Completed in 0.0 seconds
+[2024-04-20 13:37:10,297.297] INFO [616] - GET / - 200
+[2024-04-20 13:37:10,297.297] INFO [616] - 127.0.0.1:53609 - "GET / HTTP/1.1" 200
+[2024-04-20 13:37:10,310.310] INFO [616] - GET / - Completed in 0.013598 seconds
+[2024-04-20 13:37:10,926.926] INFO [616] - GET / - 200
+[2024-04-20 13:37:10,926.926] INFO [616] - 127.0.0.1:53609 - "GET / HTTP/1.1" 200
+[2024-04-20 13:37:10,926.926] INFO [616] - GET / - Completed in 0.0 seconds
+[2024-04-20 13:37:27,809.809] INFO [616] - GET /logs - 200
+[2024-04-20 13:37:27,809.809] INFO [616] - 127.0.0.1:53612 - "GET /logs HTTP/1.1" 200
+[2024-04-20 13:37:27,809.809] INFO [616] - GET /logs - Completed in 0.066611 seconds
+[2024-04-20 13:38:19,800.800] INFO [616] - GET /logs - 200
+[2024-04-20 13:38:19,800.800] INFO [616] - 127.0.0.1:53613 - "GET /logs HTTP/1.1" 200
+[2024-04-20 13:38:19,800.800] INFO [616] - GET /logs - Completed in 0.116486 seconds
+[2024-04-20 13:42:41,457.457] INFO [616] - GET /image - 200
+[2024-04-20 13:42:41,457.457] INFO [616] - 127.0.0.1:53696 - "GET /image HTTP/1.1" 200
+[2024-04-20 13:42:41,464.464] INFO [616] - GET /image - Completed in 1.403822 seconds
+[2024-04-20 13:45:00,353.353] INFO [616] - GET /capture - 307
+[2024-04-20 13:45:00,354.354] INFO [616] - 127.0.0.1:53770 - "GET /capture HTTP/1.1" 307
+[2024-04-20 13:45:00,356.356] INFO [616] - GET /capture - Completed in 2.003897 seconds
+[2024-04-20 13:45:23,139.139] INFO [616] - GET /image - 200
+[2024-04-20 13:45:23,141.141] INFO [616] - 127.0.0.1:53771 - "GET /image HTTP/1.1" 200
+[2024-04-20 13:45:23,199.199] INFO [616] - GET /image - Completed in 0.065894 seconds
+[2024-04-20 13:45:36,954.954] INFO [616] - GET /capture - 307
+[2024-04-20 13:45:36,954.954] INFO [616] - 127.0.0.1:53832 - "GET /capture HTTP/1.1" 307
+[2024-04-20 13:45:36,956.956] INFO [616] - GET /capture - Completed in 1.764032 seconds
+[2024-04-20 13:47:52,770.770] INFO [616] - GET /image - 200
+[2024-04-20 13:47:52,770.770] INFO [616] - 127.0.0.1:53926 - "GET /image HTTP/1.1" 200
+[2024-04-20 13:47:52,778.778] INFO [616] - GET /image - Completed in 0.012225 seconds
+[2024-04-20 18:02:19,194.194] INFO [616] - GET /image - 200
+[2024-04-20 18:02:19,194.194] INFO [616] - 127.0.0.1:54615 - "GET /image HTTP/1.1" 200
+[2024-04-20 18:02:19,205.205] INFO [616] - GET /image - Completed in 0.011148 seconds
+[2024-04-20 18:08:03,172.172] INFO [616] - GET /health - 200
+[2024-04-20 18:08:03,172.172] INFO [616] - 127.0.0.1:54916 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:08:03,172.172] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-20 18:08:42,750.750] INFO [616] - GET /logs - 200
+[2024-04-20 18:08:42,750.750] INFO [616] - 127.0.0.1:54952 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:08:42,750.750] INFO [616] - GET /logs - Completed in 0.049965 seconds
+[2024-04-20 18:09:21,657.657] INFO [616] - GET /logs - 200
+[2024-04-20 18:09:21,657.657] INFO [616] - 127.0.0.1:54969 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:09:21,665.665] INFO [616] - GET /logs - Completed in 0.111102 seconds
+[2024-04-20 18:23:23,468.468] INFO [616] - GET /health - 200
+[2024-04-20 18:23:23,468.468] INFO [616] - 127.0.0.1:55631 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:23:23,468.468] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-20 18:24:45,778.778] INFO [616] - GET /logs - 200
+[2024-04-20 18:24:45,778.778] INFO [616] - 127.0.0.1:55658 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:24:45,778.778] INFO [616] - GET /logs - Completed in 0.060003 seconds
+[2024-04-20 18:30:09,439.439] INFO [616] - GET /image - 200
+[2024-04-20 18:30:09,439.439] INFO [616] - 127.0.0.1:55915 - "GET /image HTTP/1.1" 200
+[2024-04-20 18:30:09,447.447] INFO [616] - GET /image - Completed in 0.007995 seconds
+[2024-04-20 18:34:24,876.876] INFO [616] - GET /health - 200
+[2024-04-20 18:34:24,883.883] INFO [616] - 127.0.0.1:56093 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:34:24,883.883] INFO [616] - GET /health - Completed in 0.007385 seconds
+[2024-04-20 18:35:01,907.907] INFO [616] - GET /health - 200
+[2024-04-20 18:35:01,907.907] INFO [616] - 127.0.0.1:56117 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:35:01,907.907] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-20 18:35:46,907.907] INFO [616] - GET /health - 200
+[2024-04-20 18:35:46,907.907] INFO [616] - 127.0.0.1:56151 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:35:46,916.916] INFO [616] - GET /health - Completed in 0.008006 seconds
+[2024-04-20 18:35:51,360.360] INFO [616] - GET /health - 200
+[2024-04-20 18:35:51,360.360] INFO [616] - 127.0.0.1:56167 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:35:51,360.360] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-20 18:36:19,607.607] INFO [616] - GET /logs - 200
+[2024-04-20 18:36:19,607.607] INFO [616] - 127.0.0.1:56196 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:36:19,607.607] INFO [616] - GET /logs - Completed in 0.031799 seconds
+[2024-04-20 18:37:02,416.416] INFO [616] - GET /logs - 200
+[2024-04-20 18:37:02,416.416] INFO [616] - 127.0.0.1:56219 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:37:02,416.416] INFO [616] - GET /logs - Completed in 0.092071 seconds
+[2024-04-20 18:40:28,829.829] INFO [616] - GET /health - 200
+[2024-04-20 18:40:28,829.829] INFO [616] - 127.0.0.1:56464 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:40:28,837.837] INFO [616] - GET /health - Completed in 0.008001 seconds
+[2024-04-20 18:42:49,583.583] INFO [616] - GET /logs - 200
+[2024-04-20 18:42:49,583.583] INFO [616] - 127.0.0.1:56608 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:42:49,583.583] INFO [616] - GET /logs - Completed in 0.023261 seconds
+[2024-04-20 18:42:54,197.197] INFO [616] - GET /logs - 200
+[2024-04-20 18:42:54,197.197] INFO [616] - 127.0.0.1:56648 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:42:54,207.207] INFO [616] - GET /logs - Completed in 0.065845 seconds
+[2024-04-20 18:42:54,608.608] INFO [616] - GET /health - 200
+[2024-04-20 18:42:54,608.608] INFO [616] - 127.0.0.1:56658 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:42:54,608.608] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-20 18:43:10,921.921] INFO [616] - GET /logs - 200
+[2024-04-20 18:43:10,934.934] INFO [616] - 127.0.0.1:56671 - "GET /logs HTTP/1.1" 200
+[2024-04-20 18:43:10,934.934] INFO [616] - GET /logs - Completed in 0.081639 seconds
+[2024-04-20 18:43:16,017.017] INFO [616] - GET /health - 200
+[2024-04-20 18:43:16,017.017] INFO [616] - 127.0.0.1:56686 - "GET /health HTTP/1.1" 200
+[2024-04-20 18:43:16,017.017] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-21 07:20:09,896.896] INFO [616] - GET /health - 200
+[2024-04-21 07:20:09,896.896] INFO [616] - 127.0.0.1:56825 - "GET /health HTTP/1.1" 200
+[2024-04-21 07:20:09,896.896] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-21 07:20:12,578.578] INFO [616] - GET /health - 200
+[2024-04-21 07:20:12,578.578] INFO [616] - 127.0.0.1:56852 - "GET /health HTTP/1.1" 200
+[2024-04-21 07:20:12,578.578] INFO [616] - GET /health - Completed in 0.0 seconds
+[2024-04-21 07:20:49,609.609] INFO [616] - GET /logs - 200
+[2024-04-21 07:20:49,609.609] INFO [616] - 127.0.0.1:56899 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:20:49,609.609] INFO [616] - GET /logs - Completed in 0.023998 seconds
+[2024-04-21 07:21:42,626.626] INFO [12260] - Started server process [6556]
+[2024-04-21 07:21:42,630.630] INFO [12260] - Waiting for application startup.
+[2024-04-21 07:21:42,630.630] INFO [12260] - Application startup complete.
+[2024-04-21 07:21:42,630.630] INFO [12260] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-21 07:21:43,058.058] INFO [12260] - GET /logs - 200
+[2024-04-21 07:21:43,058.058] INFO [12260] - 127.0.0.1:56927 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:21:43,066.066] INFO [12260] - GET /logs - Completed in 0.0876 seconds
+[2024-04-21 07:24:22,812.812] INFO [12260] - GET /logs - 200
+[2024-04-21 07:24:22,812.812] INFO [12260] - 127.0.0.1:57041 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:24:22,812.812] INFO [12260] - GET /logs - Completed in 0.059991 seconds
+[2024-04-21 07:25:14,168.168] INFO [12260] - GET /logs - 200
+[2024-04-21 07:25:14,168.168] INFO [12260] - 127.0.0.1:57099 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:25:14,168.168] INFO [12260] - GET /logs - Completed in 0.066509 seconds
+[2024-04-21 07:25:14,500.500] INFO [12260] - GET /logs - 200
+[2024-04-21 07:25:14,500.500] INFO [12260] - 127.0.0.1:57105 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:25:14,500.500] INFO [12260] - GET /logs - Completed in 0.066626 seconds
+[2024-04-21 07:25:19,087.087] INFO [12260] - GET /logs - 200
+[2024-04-21 07:25:19,087.087] INFO [12260] - 127.0.0.1:57118 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:25:19,087.087] INFO [12260] - GET /logs - Completed in 0.041352 seconds
+[2024-04-21 07:25:19,380.380] INFO [12260] - GET /logs - 200
+[2024-04-21 07:25:19,380.380] INFO [12260] - 127.0.0.1:57124 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:25:19,380.380] INFO [12260] - GET /logs - Completed in 0.049651 seconds
+[2024-04-21 07:25:20,431.431] INFO [12260] - GET /logs - 200
+[2024-04-21 07:25:20,431.431] INFO [12260] - 127.0.0.1:57137 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:25:20,431.431] INFO [12260] - GET /logs - Completed in 0.033375 seconds
+[2024-04-21 07:25:20,688.688] INFO [12260] - GET /logs - 200
+[2024-04-21 07:25:20,688.688] INFO [12260] - 127.0.0.1:57143 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:25:20,688.688] INFO [12260] - GET /logs - Completed in 0.028828 seconds
+[2024-04-21 07:28:09,527.527] INFO [12260] - GET /logs - 200
+[2024-04-21 07:28:09,527.527] INFO [12260] - 127.0.0.1:57243 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:28:09,527.527] INFO [12260] - GET /logs - Completed in 0.066789 seconds
+[2024-04-21 07:28:09,843.843] INFO [12260] - GET /logs - 200
+[2024-04-21 07:28:09,843.843] INFO [12260] - 127.0.0.1:57251 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:28:09,851.851] INFO [12260] - GET /logs - Completed in 0.077058 seconds
+[2024-04-21 07:28:16,047.047] INFO [12260] - GET /logs - 200
+[2024-04-21 07:28:16,047.047] INFO [12260] - 127.0.0.1:57269 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:28:16,047.047] INFO [12260] - GET /logs - Completed in 0.066694 seconds
+[2024-04-21 07:28:16,392.392] INFO [12260] - GET /logs - 200
+[2024-04-21 07:28:16,392.392] INFO [12260] - 127.0.0.1:57275 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:28:16,392.392] INFO [12260] - GET /logs - Completed in 0.061372 seconds
+[2024-04-21 07:30:14,694.694] INFO [11336] - Started server process [5580]
+[2024-04-21 07:30:14,694.694] INFO [11336] - Waiting for application startup.
+[2024-04-21 07:30:14,694.694] INFO [11336] - Application startup complete.
+[2024-04-21 07:30:14,694.694] INFO [11336] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-21 07:30:28,907.907] INFO [11336] - GET /logs - 200
+[2024-04-21 07:30:28,907.907] INFO [11336] - 127.0.0.1:57413 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:30:28,907.907] INFO [11336] - GET /logs - Completed in 0.066284 seconds
+[2024-04-21 07:30:29,259.259] INFO [11336] - GET /logs - 200
+[2024-04-21 07:30:29,272.272] INFO [11336] - 127.0.0.1:57419 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:30:29,272.272] INFO [11336] - GET /logs - Completed in 0.077161 seconds
+[2024-04-21 07:30:36,459.459] INFO [11336] - GET /logs - 200
+[2024-04-21 07:30:36,459.459] INFO [11336] - 127.0.0.1:57440 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:30:36,459.459] INFO [11336] - GET /logs - Completed in 0.084194 seconds
+[2024-04-21 07:30:36,808.808] INFO [11336] - GET /logs - 200
+[2024-04-21 07:30:36,808.808] INFO [11336] - 127.0.0.1:57447 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:30:36,808.808] INFO [11336] - GET /logs - Completed in 0.065311 seconds
+[2024-04-21 07:30:43,437.437] INFO [11336] - GET /logs - 200
+[2024-04-21 07:30:43,442.442] INFO [11336] - 127.0.0.1:57467 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:30:43,442.442] INFO [11336] - GET /logs - Completed in 0.087551 seconds
+[2024-04-21 07:30:43,820.820] INFO [11336] - GET /logs - 200
+[2024-04-21 07:30:43,820.820] INFO [11336] - 127.0.0.1:57473 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:30:43,820.820] INFO [11336] - GET /logs - Completed in 0.091992 seconds
+[2024-04-21 07:31:20,151.151] INFO [11336] - GET /logs - 200
+[2024-04-21 07:31:20,151.151] INFO [11336] - 127.0.0.1:57525 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:31:20,151.151] INFO [11336] - GET /logs - Completed in 0.053023 seconds
+[2024-04-21 07:33:43,642.642] INFO [11336] - GET /logs - 200
+[2024-04-21 07:33:43,642.642] INFO [11336] - 127.0.0.1:57659 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:33:43,644.644] INFO [11336] - GET /logs - Completed in 0.075611 seconds
+[2024-04-21 07:36:36,110.110] INFO [11336] - GET /logs - 200
+[2024-04-21 07:36:36,110.110] INFO [11336] - 127.0.0.1:57826 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:36:36,112.112] INFO [11336] - GET /logs - Completed in 0.003995 seconds
+[2024-04-21 07:36:40,289.289] INFO [11336] - GET /logs - 200
+[2024-04-21 07:36:40,290.290] INFO [11336] - 127.0.0.1:57847 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:36:40,291.291] INFO [11336] - GET /logs - Completed in 0.035677 seconds
+[2024-04-21 07:40:15,252.252] INFO [11336] - GET /logs - 200
+[2024-04-21 07:40:15,252.252] INFO [11336] - 127.0.0.1:57968 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:40:15,253.253] INFO [11336] - GET /logs - Completed in 0.025523 seconds
+[2024-04-21 07:40:17,145.145] INFO [11336] - GET /logs - 200
+[2024-04-21 07:40:17,145.145] INFO [11336] - 127.0.0.1:58013 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:40:17,145.145] INFO [11336] - GET /logs - Completed in 0.017609 seconds
+[2024-04-21 07:40:17,396.396] INFO [11336] - GET /logs - 200
+[2024-04-21 07:40:17,396.396] INFO [11336] - 127.0.0.1:58019 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:40:17,396.396] INFO [11336] - GET /logs - Completed in 0.017906 seconds
+[2024-04-21 07:40:17,946.946] INFO [11336] - GET /logs - 200
+[2024-04-21 07:40:17,946.946] INFO [11336] - 127.0.0.1:58032 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:40:17,946.946] INFO [11336] - GET /logs - Completed in 0.018067 seconds
+[2024-04-21 07:40:18,301.301] INFO [11336] - GET /logs - 200
+[2024-04-21 07:40:18,301.301] INFO [11336] - 127.0.0.1:58038 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:40:18,316.316] INFO [11336] - GET /logs - Completed in 0.110896 seconds
+[2024-04-21 07:41:38,102.102] INFO [11336] - GET /logs - 200
+[2024-04-21 07:41:38,102.102] INFO [11336] - 127.0.0.1:58074 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:41:38,102.102] INFO [11336] - GET /logs - Completed in 0.061326 seconds
+[2024-04-21 07:41:54,337.337] INFO [11336] - GET /logs - 200
+[2024-04-21 07:41:54,337.337] INFO [11336] - 127.0.0.1:58094 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:41:54,337.337] INFO [11336] - GET /logs - Completed in 0.074996 seconds
+[2024-04-21 07:42:17,678.678] INFO [11336] - GET /logs - 200
+[2024-04-21 07:42:17,678.678] INFO [11336] - 127.0.0.1:58110 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:42:17,678.678] INFO [11336] - GET /logs - Completed in 0.066635 seconds
+[2024-04-21 07:42:26,953.953] INFO [11336] - GET /logs - 200
+[2024-04-21 07:42:26,954.954] INFO [11336] - 127.0.0.1:58134 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:42:26,956.956] INFO [11336] - GET /logs - Completed in 0.076762 seconds
+[2024-04-21 07:45:35,398.398] INFO [7392] - Started server process [11688]
+[2024-04-21 07:45:35,398.398] INFO [7392] - Waiting for application startup.
+[2024-04-21 07:45:35,398.398] INFO [7392] - Application startup complete.
+[2024-04-21 07:45:35,398.398] INFO [7392] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-21 07:45:40,047.047] INFO [7392] - GET /logs - 200
+[2024-04-21 07:45:40,048.048] INFO [7392] - 127.0.0.1:58222 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:45:40,050.050] INFO [7392] - GET /logs - Completed in 0.074773 seconds
+[2024-04-21 07:47:53,371.371] INFO [7392] - GET /logs - 200
+[2024-04-21 07:47:53,373.373] INFO [7392] - 127.0.0.1:58278 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:47:53,375.375] INFO [7392] - GET /logs - Completed in 0.08594 seconds
+[2024-04-21 07:48:49,541.541] INFO [7392] - GET /logs - 200
+[2024-04-21 07:48:49,542.542] INFO [7392] - 127.0.0.1:58306 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:48:49,546.546] INFO [7392] - GET /logs - Completed in 0.083156 seconds
+[2024-04-21 07:49:14,029.029] INFO [7392] - GET /image - 200
+[2024-04-21 07:49:14,029.029] INFO [7392] - 127.0.0.1:58331 - "GET /image HTTP/1.1" 200
+[2024-04-21 07:49:14,036.036] INFO [7392] - GET /image - Completed in 0.661807 seconds
+[2024-04-21 07:50:39,732.732] INFO [7392] - GET /logs - 200
+[2024-04-21 07:50:39,732.732] INFO [7392] - 127.0.0.1:58423 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:50:39,732.732] INFO [7392] - GET /logs - Completed in 0.08343 seconds
+[2024-04-21 07:50:40,698.698] INFO [7392] - GET /logs - 200
+[2024-04-21 07:50:40,699.699] INFO [7392] - 127.0.0.1:58434 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:50:40,701.701] INFO [7392] - GET /logs - Completed in 0.06956 seconds
+[2024-04-21 07:50:44,030.030] INFO [7392] - GET /logs - 200
+[2024-04-21 07:50:44,045.045] INFO [7392] - 127.0.0.1:58448 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:50:44,047.047] INFO [7392] - GET /logs - Completed in 0.079963 seconds
+[2024-04-21 07:53:44,187.187] INFO [7392] - GET /logs - 200
+[2024-04-21 07:53:44,202.202] INFO [7392] - 127.0.0.1:58523 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:53:44,205.205] INFO [7392] - GET /logs - Completed in 0.084361 seconds
+[2024-04-21 07:57:24,483.483] INFO [7392] - GET /logs - 200
+[2024-04-21 07:57:24,484.484] INFO [7392] - 127.0.0.1:58643 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:57:24,487.487] INFO [7392] - GET /logs - Completed in 0.074778 seconds
+[2024-04-21 07:58:04,519.519] INFO [7392] - GET /logs - 200
+[2024-04-21 07:58:04,519.519] INFO [7392] - 127.0.0.1:58676 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:58:04,519.519] INFO [7392] - GET /logs - Completed in 0.06667 seconds
+[2024-04-21 07:58:46,997.997] INFO [7392] - GET /logs - 200
+[2024-04-21 07:58:46,997.997] INFO [7392] - 127.0.0.1:58706 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:58:47,012.012] INFO [7392] - GET /logs - Completed in 0.0817 seconds
+[2024-04-21 07:59:34,687.687] INFO [7392] - GET /logs - 200
+[2024-04-21 07:59:34,688.688] INFO [7392] - 127.0.0.1:58740 - "GET /logs HTTP/1.1" 200
+[2024-04-21 07:59:34,692.692] INFO [7392] - GET /logs - Completed in 0.117823 seconds
+[2024-04-21 08:01:40,624.624] INFO [7392] - GET /logs - 200
+[2024-04-21 08:01:40,624.624] INFO [7392] - 127.0.0.1:58797 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:01:40,624.624] INFO [7392] - GET /logs - Completed in 0.066668 seconds
+[2024-04-21 08:02:30,223.223] INFO [7392] - GET /logs - 200
+[2024-04-21 08:02:30,224.224] INFO [7392] - 127.0.0.1:58824 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:02:30,225.225] INFO [7392] - GET /logs - Completed in 0.08788 seconds
+[2024-04-21 08:02:34,575.575] INFO [7392] - GET /logs - 200
+[2024-04-21 08:02:34,576.576] INFO [7392] - 127.0.0.1:58842 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:02:34,577.577] INFO [7392] - GET /logs - Completed in 0.041404 seconds
+[2024-04-21 08:05:00,396.396] INFO [7392] - GET /logs - 200
+[2024-04-21 08:05:00,398.398] INFO [7392] - 127.0.0.1:58922 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:05:00,398.398] INFO [7392] - GET /logs - Completed in 0.07942 seconds
+[2024-04-21 08:07:55,081.081] INFO [7392] - GET /logs - 200
+[2024-04-21 08:07:55,082.082] INFO [7392] - 127.0.0.1:59128 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:07:55,083.083] INFO [7392] - GET /logs - Completed in 0.072763 seconds
+[2024-04-21 08:09:34,330.330] INFO [7392] - GET /logs - 200
+[2024-04-21 08:09:34,330.330] INFO [7392] - 127.0.0.1:59218 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:09:34,350.350] INFO [7392] - GET /logs - Completed in 0.214841 seconds
+[2024-04-21 08:09:51,981.981] INFO [7392] - GET /logs - 200
+[2024-04-21 08:09:51,982.982] INFO [7392] - 127.0.0.1:59280 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:09:51,983.983] INFO [7392] - GET /logs - Completed in 0.03829 seconds
+[2024-04-21 08:09:52,229.229] INFO [7392] - GET /logs - 200
+[2024-04-21 08:09:52,229.229] INFO [7392] - 127.0.0.1:59286 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:09:52,229.229] INFO [7392] - GET /logs - Completed in 0.017473 seconds
+[2024-04-21 08:11:40,795.795] INFO [7392] - GET /logs - 200
+[2024-04-21 08:11:40,810.810] INFO [7392] - 127.0.0.1:59333 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:11:40,812.812] INFO [7392] - GET /logs - Completed in 0.084443 seconds
+[2024-04-21 08:11:54,137.137] INFO [7392] - GET /logs - 200
+[2024-04-21 08:11:54,137.137] INFO [7392] - 127.0.0.1:59350 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:11:54,139.139] INFO [7392] - GET /logs - Completed in 0.092806 seconds
+[2024-04-21 08:11:58,459.459] INFO [7392] - GET /logs - 200
+[2024-04-21 08:11:58,460.460] INFO [7392] - 127.0.0.1:59366 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:11:58,463.463] INFO [7392] - GET /logs - Completed in 0.115815 seconds
+[2024-04-21 08:13:08,818.818] INFO [7392] - GET /logs - 200
+[2024-04-21 08:13:08,819.819] INFO [7392] - 127.0.0.1:59415 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:13:08,820.820] INFO [7392] - GET /logs - Completed in 0.099479 seconds
+[2024-04-21 08:14:18,850.850] INFO [7392] - GET /logs - 200
+[2024-04-21 08:14:18,851.851] INFO [7392] - 127.0.0.1:59452 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:14:18,852.852] INFO [7392] - GET /logs - Completed in 0.07476 seconds
+[2024-04-21 08:23:30,404.404] INFO [7392] - GET /logs - 200
+[2024-04-21 08:23:30,404.404] INFO [7392] - 127.0.0.1:59918 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:23:30,404.404] INFO [7392] - GET /logs - Completed in 0.020152 seconds
+[2024-04-21 08:24:23,843.843] INFO [7392] - GET /logs - 200
+[2024-04-21 08:24:23,844.844] INFO [7392] - 127.0.0.1:59940 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:24:23,844.844] INFO [7392] - GET /logs - Completed in 0.066667 seconds
+[2024-04-21 08:24:27,813.813] INFO [7392] - GET /logs - 200
+[2024-04-21 08:24:27,813.813] INFO [7392] - 127.0.0.1:59956 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:24:27,813.813] INFO [7392] - GET /logs - Completed in 0.066552 seconds
+[2024-04-21 08:24:31,978.978] INFO [7392] - GET /logs - 200
+[2024-04-21 08:24:31,979.979] INFO [7392] - 127.0.0.1:59969 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:24:31,981.981] INFO [7392] - GET /logs - Completed in 0.100163 seconds
+[2024-04-21 08:46:50,606.606] INFO [7392] - GET /logs - 200
+[2024-04-21 08:46:50,607.607] INFO [7392] - 127.0.0.1:60978 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:46:50,609.609] INFO [7392] - GET /logs - Completed in 0.074986 seconds
+[2024-04-21 08:46:56,934.934] INFO [7392] - GET /logs - 200
+[2024-04-21 08:46:56,935.935] INFO [7392] - 127.0.0.1:60992 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:46:56,937.937] INFO [7392] - GET /logs - Completed in 0.075273 seconds
+[2024-04-21 08:47:00,081.081] INFO [7392] - GET /logs - 200
+[2024-04-21 08:47:00,081.081] INFO [7392] - 127.0.0.1:61008 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:47:00,081.081] INFO [7392] - GET /logs - Completed in 0.031083 seconds
+[2024-04-21 08:48:55,766.766] INFO [7392] - GET /logs - 200
+[2024-04-21 08:48:55,766.766] INFO [7392] - 127.0.0.1:61127 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:48:55,766.766] INFO [7392] - GET /logs - Completed in 0.048796 seconds
+[2024-04-21 08:49:58,691.691] INFO [7392] - GET /logs - 200
+[2024-04-21 08:49:58,691.691] INFO [7392] - 127.0.0.1:61161 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:49:58,691.691] INFO [7392] - GET /logs - Completed in 0.063736 seconds
+[2024-04-21 08:57:07,504.504] INFO [7392] - GET /logs - 200
+[2024-04-21 08:57:07,504.504] INFO [7392] - 127.0.0.1:61465 - "GET /logs HTTP/1.1" 200
+[2024-04-21 08:57:07,504.504] INFO [7392] - GET /logs - Completed in 0.130204 seconds
+[2024-04-21 09:14:17,786.786] INFO [7392] - GET /capture - 307
+[2024-04-21 09:14:17,787.787] INFO [7392] - 127.0.0.1:62177 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:14:17,790.790] INFO [7392] - GET /capture - Completed in 2.150097 seconds
+[2024-04-21 09:14:27,631.631] INFO [7392] - GET /image - 200
+[2024-04-21 09:14:27,632.632] INFO [7392] - 127.0.0.1:62178 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:14:27,694.694] INFO [7392] - GET /image - Completed in 0.075158 seconds
+[2024-04-21 09:20:16,481.481] INFO [7392] - GET /image - 200
+[2024-04-21 09:20:16,483.483] INFO [7392] - 127.0.0.1:62433 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:20:16,495.495] INFO [7392] - GET /image - Completed in 0.019031 seconds
+[2024-04-21 09:28:45,566.566] INFO [7392] - GET /image - 200
+[2024-04-21 09:28:45,566.566] INFO [7392] - 127.0.0.1:62750 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:28:45,585.585] INFO [7392] - GET /image - Completed in 0.018592 seconds
+[2024-04-21 09:29:01,382.382] INFO [7392] - GET /image - 200
+[2024-04-21 09:29:01,383.383] INFO [7392] - 127.0.0.1:62772 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:29:01,393.393] INFO [7392] - GET /image - Completed in 0.016658 seconds
+[2024-04-21 09:32:57,154.154] INFO [7392] - GET /image - 200
+[2024-04-21 09:32:57,155.155] INFO [7392] - 127.0.0.1:63053 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:32:57,160.160] INFO [7392] - GET /image - Completed in 0.007995 seconds
+[2024-04-21 09:37:41,148.148] INFO [7392] - GET /image - 200
+[2024-04-21 09:37:41,149.149] INFO [7392] - 127.0.0.1:63226 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:37:41,153.153] INFO [7392] - GET /image - Completed in 0.007419 seconds
+[2024-04-21 09:37:53,815.815] INFO [7392] - GET /capture - 307
+[2024-04-21 09:37:53,816.816] INFO [7392] - 127.0.0.1:63227 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:37:53,818.818] INFO [7392] - GET /capture - Completed in 2.304589 seconds
+[2024-04-21 09:38:05,513.513] INFO [7392] - GET /capture - 307
+[2024-04-21 09:38:05,513.513] INFO [7392] - 127.0.0.1:63267 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:38:05,528.528] INFO [7392] - GET /capture - Completed in 1.532888 seconds
+[2024-04-21 09:38:31,062.062] INFO [7392] - GET /capture - 307
+[2024-04-21 09:38:31,063.063] INFO [7392] - 127.0.0.1:63268 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:38:31,065.065] INFO [7392] - GET /capture - Completed in 1.676881 seconds
+[2024-04-21 09:38:43,740.740] INFO [7392] - GET /capture - 307
+[2024-04-21 09:38:43,740.740] INFO [7392] - 127.0.0.1:63315 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:38:43,740.740] INFO [7392] - GET /capture - Completed in 1.631298 seconds
+[2024-04-21 09:40:06,870.870] INFO [7392] - GET /image - 200
+[2024-04-21 09:40:06,871.871] INFO [7392] - 127.0.0.1:63418 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:40:06,947.947] INFO [7392] - GET /image - Completed in 0.081082 seconds
+[2024-04-21 09:40:15,358.358] INFO [7392] - GET /capture - 307
+[2024-04-21 09:40:15,358.358] INFO [7392] - 127.0.0.1:63419 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:40:15,358.358] INFO [7392] - GET /capture - Completed in 1.763044 seconds
+[2024-04-21 09:40:17,158.158] INFO [7392] - GET /image - 200
+[2024-04-21 09:40:17,159.159] INFO [7392] - 127.0.0.1:63419 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:40:17,233.233] INFO [7392] - GET /image - Completed in 0.079897 seconds
+[2024-04-21 09:40:23,533.533] INFO [7392] - GET /capture - 307
+[2024-04-21 09:40:23,534.534] INFO [7392] - 127.0.0.1:63419 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:40:23,536.536] INFO [7392] - GET /capture - Completed in 1.552421 seconds
+[2024-04-21 09:40:25,230.230] INFO [7392] - GET /image - 200
+[2024-04-21 09:40:25,230.230] INFO [7392] - 127.0.0.1:63419 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:40:25,316.316] INFO [7392] - GET /image - Completed in 0.08457 seconds
+[2024-04-21 09:41:13,802.802] INFO [7392] - GET /logs - 200
+[2024-04-21 09:41:13,802.802] INFO [7392] - 127.0.0.1:63462 - "GET /logs HTTP/1.1" 200
+[2024-04-21 09:41:13,802.802] INFO [7392] - GET /logs - Completed in 0.0 seconds
+[2024-04-21 09:41:56,836.836] INFO [7392] - GET /image - 200
+[2024-04-21 09:41:56,837.837] INFO [7392] - 127.0.0.1:63548 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:41:56,840.840] INFO [7392] - GET /image - Completed in 0.004996 seconds
+[2024-04-21 09:42:34,912.912] INFO [7392] - GET /image - 200
+[2024-04-21 09:42:34,913.913] INFO [7392] - 127.0.0.1:63549 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:42:34,919.919] INFO [7392] - GET /image - Completed in 0.009995 seconds
+[2024-04-21 09:42:40,744.744] INFO [7392] - GET /capture - 307
+[2024-04-21 09:42:40,744.744] INFO [7392] - 127.0.0.1:63549 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:42:40,746.746] INFO [7392] - GET /capture - Completed in 1.905123 seconds
+[2024-04-21 09:42:51,526.526] INFO [7392] - GET /capture - 307
+[2024-04-21 09:42:51,526.526] INFO [7392] - 127.0.0.1:63581 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:42:51,528.528] INFO [7392] - GET /capture - Completed in 1.566386 seconds
+[2024-04-21 09:42:54,076.076] INFO [7392] - GET /image - 200
+[2024-04-21 09:42:54,076.076] INFO [7392] - 127.0.0.1:63581 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:42:54,197.197] INFO [7392] - GET /image - Completed in 0.123469 seconds
+[2024-04-21 09:43:00,878.878] INFO [7392] - GET /capture - 307
+[2024-04-21 09:43:00,878.878] INFO [7392] - 127.0.0.1:63582 - "GET /capture HTTP/1.1" 307
+[2024-04-21 09:43:00,880.880] INFO [7392] - GET /capture - Completed in 1.606189 seconds
+[2024-04-21 09:43:03,269.269] INFO [7392] - GET /image - 200
+[2024-04-21 09:43:03,269.269] INFO [7392] - 127.0.0.1:63582 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:43:03,330.330] INFO [7392] - GET /image - Completed in 0.062849 seconds
+[2024-04-21 09:43:22,834.834] INFO [7392] - GET /logs - 200
+[2024-04-21 09:43:22,834.834] INFO [7392] - 127.0.0.1:63607 - "GET /logs HTTP/1.1" 200
+[2024-04-21 09:43:22,834.834] INFO [7392] - GET /logs - Completed in 0.079076 seconds
+[2024-04-21 09:43:51,326.326] INFO [7392] - GET /logs - 200
+[2024-04-21 09:43:51,327.327] INFO [7392] - 127.0.0.1:63621 - "GET /logs HTTP/1.1" 200
+[2024-04-21 09:43:51,330.330] INFO [7392] - GET /logs - Completed in 0.078631 seconds
+[2024-04-21 09:44:00,905.905] INFO [7392] - GET /image - 200
+[2024-04-21 09:44:00,906.906] INFO [7392] - 127.0.0.1:63637 - "GET /image HTTP/1.1" 200
+[2024-04-21 09:44:00,919.919] INFO [7392] - GET /image - Completed in 0.01699 seconds
+[2024-04-21 10:01:39,635.635] INFO [6328] - Started server process [7684]
+[2024-04-21 10:01:39,635.635] INFO [6328] - Waiting for application startup.
+[2024-04-21 10:01:39,636.636] INFO [6328] - Application startup complete.
+[2024-04-21 10:01:39,636.636] INFO [6328] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-21 10:01:51,609.609] INFO [6328] - GET /logs - 200
+[2024-04-21 10:01:51,609.609] INFO [6328] - 127.0.0.1:50220 - "GET /logs HTTP/1.1" 200
+[2024-04-21 10:01:51,610.610] INFO [6328] - GET /logs - Completed in 0.03198 seconds
+[2024-04-21 10:01:57,578.578] INFO [6328] - GET /image - 200
+[2024-04-21 10:01:57,579.579] INFO [6328] - 127.0.0.1:50235 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:01:57,596.596] INFO [6328] - GET /image - Completed in 0.640629 seconds
+[2024-04-21 10:02:02,866.866] INFO [6328] - GET /capture - 307
+[2024-04-21 10:02:02,867.867] INFO [6328] - 127.0.0.1:50235 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:02:02,870.870] INFO [6328] - GET /capture - Completed in 3.402302 seconds
+[2024-04-21 10:19:57,401.401] INFO [8460] - Started server process [8424]
+[2024-04-21 10:19:57,416.416] INFO [8460] - Waiting for application startup.
+[2024-04-21 10:19:57,416.416] INFO [8460] - Application startup complete.
+[2024-04-21 10:19:57,416.416] INFO [8460] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-21 10:30:39,041.041] INFO [8460] - GET /image - 200
+[2024-04-21 10:30:39,042.042] INFO [8460] - 127.0.0.1:50044 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:30:39,052.052] INFO [8460] - GET /image - Completed in 0.762977 seconds
+[2024-04-21 10:30:40,474.474] INFO [8460] - GET /favicon.ico - 404
+[2024-04-21 10:30:40,490.490] INFO [8460] - 127.0.0.1:50044 - "GET /favicon.ico HTTP/1.1" 404
+[2024-04-21 10:30:40,490.490] INFO [8460] - GET /favicon.ico - Completed in 0.016755 seconds
+[2024-04-21 10:31:10,272.272] INFO [8460] - GET /logs - 200
+[2024-04-21 10:31:10,273.273] INFO [8460] - 127.0.0.1:50058 - "GET /logs HTTP/1.1" 200
+[2024-04-21 10:31:10,275.275] INFO [8460] - GET /logs - Completed in 0.119342 seconds
+[2024-04-21 10:31:19,596.596] INFO [8460] - GET /image - 200
+[2024-04-21 10:31:19,600.600] INFO [8460] - 127.0.0.1:50045 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:31:19,616.616] INFO [8460] - GET /image - Completed in 0.023312 seconds
+[2024-04-21 10:31:26,934.934] INFO [8460] - GET /capture - 307
+[2024-04-21 10:31:26,935.935] INFO [8460] - 127.0.0.1:50045 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:31:26,939.939] INFO [8460] - GET /capture - Completed in 2.697969 seconds
+[2024-04-21 10:32:19,773.773] INFO [8460] - GET /capture - 307
+[2024-04-21 10:32:19,773.773] INFO [8460] - 127.0.0.1:50107 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:32:19,773.773] INFO [8460] - GET /capture - Completed in 1.71231 seconds
+[2024-04-21 10:32:35,171.171] INFO [8460] - GET /capture - 307
+[2024-04-21 10:32:35,171.171] INFO [8460] - 127.0.0.1:50108 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:32:35,171.171] INFO [8460] - GET /capture - Completed in 1.606203 seconds
+[2024-04-21 10:32:54,003.003] INFO [8460] - GET /capture - 307
+[2024-04-21 10:32:54,004.004] INFO [8460] - 127.0.0.1:50137 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:32:54,004.004] INFO [8460] - GET /capture - Completed in 1.478473 seconds
+[2024-04-21 10:33:08,285.285] INFO [8460] - GET /capture - 307
+[2024-04-21 10:33:08,286.286] INFO [8460] - 127.0.0.1:50138 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:33:08,289.289] INFO [8460] - GET /capture - Completed in 1.523954 seconds
+[2024-04-21 10:34:10,896.896] INFO [8460] - GET /image - 200
+[2024-04-21 10:34:10,896.896] INFO [8460] - 127.0.0.1:50156 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:34:10,911.911] INFO [8460] - GET /image - Completed in 0.01427 seconds
+[2024-04-21 10:34:15,322.322] INFO [8460] - GET /image - 200
+[2024-04-21 10:34:15,323.323] INFO [8460] - 127.0.0.1:50156 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:34:15,361.361] INFO [8460] - GET /image - Completed in 0.043453 seconds
+[2024-04-21 10:34:19,789.789] INFO [8460] - GET /capture - 307
+[2024-04-21 10:34:19,790.790] INFO [8460] - 127.0.0.1:50156 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:34:19,790.790] INFO [8460] - GET /capture - Completed in 1.763567 seconds
+[2024-04-21 10:34:28,149.149] INFO [8460] - GET /image - 200
+[2024-04-21 10:34:28,151.151] INFO [8460] - 127.0.0.1:50157 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:34:28,235.235] INFO [8460] - GET /image - Completed in 0.090893 seconds
+[2024-04-21 10:35:08,601.601] INFO [8460] - GET /capture - 307
+[2024-04-21 10:35:08,601.601] INFO [8460] - 127.0.0.1:50195 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:35:08,616.616] INFO [8460] - GET /capture - Completed in 1.877635 seconds
+[2024-04-21 10:35:22,765.765] INFO [8460] - GET /image - 200
+[2024-04-21 10:35:22,765.765] INFO [8460] - 127.0.0.1:50196 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:35:22,850.850] INFO [8460] - GET /image - Completed in 0.084088 seconds
+[2024-04-21 10:35:29,587.587] INFO [8460] - GET /capture - 307
+[2024-04-21 10:35:29,589.589] INFO [8460] - 127.0.0.1:50196 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:35:29,597.597] INFO [8460] - GET /capture - Completed in 1.899933 seconds
+[2024-04-21 10:35:32,369.369] INFO [8460] - GET /image - 200
+[2024-04-21 10:35:32,369.369] INFO [8460] - 127.0.0.1:50196 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:35:32,454.454] INFO [8460] - GET /image - Completed in 0.089641 seconds
+[2024-04-21 10:41:47,169.169] INFO [652] - Started server process [5428]
+[2024-04-21 10:41:47,169.169] INFO [652] - Waiting for application startup.
+[2024-04-21 10:41:47,169.169] INFO [652] - Application startup complete.
+[2024-04-21 10:41:47,169.169] INFO [652] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-21 10:41:57,790.790] INFO [652] - GET /image - 200
+[2024-04-21 10:41:57,790.790] INFO [652] - 127.0.0.1:50309 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:41:57,806.806] INFO [652] - GET /image - Completed in 0.980995 seconds
+[2024-04-21 10:42:04,875.875] INFO [652] - GET /capture - 307
+[2024-04-21 10:42:04,875.875] INFO [652] - 127.0.0.1:50310 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:42:04,884.884] INFO [652] - GET /capture - Completed in 1.847765 seconds
+[2024-04-21 10:42:15,750.750] INFO [652] - GET /image - 200
+[2024-04-21 10:42:15,750.750] INFO [652] - 127.0.0.1:50332 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:42:15,858.858] INFO [652] - GET /image - Completed in 0.115723 seconds
+[2024-04-21 10:42:53,153.153] INFO [652] - GET /image - 200
+[2024-04-21 10:42:53,167.167] INFO [652] - 127.0.0.1:50333 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:42:53,186.186] INFO [652] - GET /image - Completed in 0.039425 seconds
+[2024-04-21 10:42:58,997.997] INFO [652] - GET /capture - 307
+[2024-04-21 10:42:58,997.997] INFO [652] - 127.0.0.1:50333 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:42:58,997.997] INFO [652] - GET /capture - Completed in 2.039128 seconds
+[2024-04-21 10:43:01,221.221] INFO [652] - GET /image - 200
+[2024-04-21 10:43:01,221.221] INFO [652] - 127.0.0.1:50333 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:43:01,375.375] INFO [652] - GET /image - Completed in 0.164485 seconds
+[2024-04-21 10:43:31,190.190] INFO [652] - GET /logs - 200
+[2024-04-21 10:43:31,192.192] INFO [652] - 127.0.0.1:50374 - "GET /logs HTTP/1.1" 200
+[2024-04-21 10:43:31,193.193] INFO [652] - GET /logs - Completed in 0.054374 seconds
+[2024-04-21 10:44:41,406.406] INFO [652] - GET /image - 200
+[2024-04-21 10:44:41,406.406] INFO [652] - 127.0.0.1:50410 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:44:41,422.422] INFO [652] - GET /image - Completed in 0.016225 seconds
+[2024-04-21 10:45:09,361.361] INFO [652] - GET /image - 200
+[2024-04-21 10:45:09,369.369] INFO [652] - 127.0.0.1:50411 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:45:09,377.377] INFO [652] - GET /image - Completed in 0.016024 seconds
+[2024-04-21 10:45:54,011.011] INFO [652] - GET /image - 200
+[2024-04-21 10:45:54,011.011] INFO [652] - 127.0.0.1:50484 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:45:54,027.027] INFO [652] - GET /image - Completed in 0.016009 seconds
+[2024-04-21 10:47:05,711.711] INFO [652] - GET /image - 200
+[2024-04-21 10:47:05,711.711] INFO [652] - 127.0.0.1:50520 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:47:05,730.730] INFO [652] - GET /image - Completed in 0.018984 seconds
+[2024-04-21 10:47:37,548.548] INFO [652] - GET /image - 200
+[2024-04-21 10:47:37,558.558] INFO [652] - 127.0.0.1:50521 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:47:37,572.572] INFO [652] - GET /image - Completed in 0.023754 seconds
+[2024-04-21 10:48:02,903.903] INFO [652] - GET /logs - 200
+[2024-04-21 10:48:02,903.903] INFO [652] - 127.0.0.1:50554 - "GET /logs HTTP/1.1" 200
+[2024-04-21 10:48:02,911.911] INFO [652] - GET /logs - Completed in 0.125982 seconds
+[2024-04-21 10:48:10,389.389] INFO [652] - GET /image - 200
+[2024-04-21 10:48:10,403.403] INFO [652] - 127.0.0.1:50571 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:48:10,411.411] INFO [652] - GET /image - Completed in 0.022092 seconds
+[2024-04-21 10:49:19,601.601] INFO [652] - GET /capture - 307
+[2024-04-21 10:49:19,601.601] INFO [652] - 127.0.0.1:50587 - "GET /capture HTTP/1.1" 307
+[2024-04-21 10:49:19,609.609] INFO [652] - GET /capture - Completed in 1.92535 seconds
+[2024-04-21 10:49:21,857.857] INFO [652] - GET /image - 200
+[2024-04-21 10:49:21,910.910] INFO [652] - 127.0.0.1:50587 - "GET /image HTTP/1.1" 200
+[2024-04-21 10:49:22,076.076] INFO [652] - GET /image - Completed in 0.227004 seconds
+[2024-04-21 10:49:42,100.100] INFO [652] - Shutting down
+[2024-04-21 10:49:42,205.205] INFO [652] - Waiting for application shutdown.
+[2024-04-21 10:49:42,205.205] INFO [652] - Application shutdown complete.
+[2024-04-21 10:49:42,205.205] INFO [652] - Finished server process [5428]
+[2024-04-21 10:51:19,621.621] INFO [8840] - Started server process [7676]
+[2024-04-21 10:51:19,621.621] INFO [8840] - Waiting for application startup.
+[2024-04-21 10:51:19,636.636] INFO [8840] - Application startup complete.
+[2024-04-21 10:51:19,636.636] INFO [8840] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
