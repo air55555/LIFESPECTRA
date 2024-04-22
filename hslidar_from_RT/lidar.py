@@ -2,7 +2,7 @@ from ouster import client
 from contextlib import closing
 import matplotlib.pyplot as plt
 from more_itertools import nth
-import numpy as  np
+import numpy as np
 from statistics import mean
 import sys
 
@@ -20,9 +20,6 @@ class Lidar:
         client.set_config(self._hostname, self._config, persist=True, udp_dest_auto = True,)
 
     def create_ply(self, path):
-
-
-
         source = client.Sensor(self._hostname, 7502, 7503)
         info = source.metadata
 
@@ -42,7 +39,7 @@ class Lidar:
 
         a = a/128
         new_arr = []
-        for i, k  in enumerate(a):
+        for i, k in enumerate(a):
             if a[i] == 0:
                 n_frames = len(new_arr)*4
                 break
