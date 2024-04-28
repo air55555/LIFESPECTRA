@@ -93,6 +93,12 @@ def redirect_url(default='index'):
 @app.get("/slow_left")
 async def slow_left():
     return ""
+
+@app.get("/camera_up")
+async def capture_image():
+    return RedirectResponse("http://localhost:10004/camera1/")
+
+
 @app.get("/capture")
 async def capture_image():
     # Define the coordinates of the rectangle region (x, y, width, height)
