@@ -19,3 +19,12 @@ pip3 install pygame
 pip3 install  camera
 pip3 install opencv-python-headless
 Use Disable cache in google chrome developer options. Press F12, Go to Network > check disable cache
+
+
+Wordpress install.
+1. Install https://localwp.com/
+2. Create new site - "LIFESPECTRA" . user 1 , password 1
+3 Install WP plugin UpdraftPlus Backup/Restore
+4.UpdraftPlus -> Settings ->Choose your remote storage -> Gdrive and login to LRS acc
+5.UpdraftPlus -> Existing backups  restore desired backups
+  Could be troubles with Plugin part. Just download it  manually
