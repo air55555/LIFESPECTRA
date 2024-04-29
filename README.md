@@ -28,3 +28,6 @@ Wordpress install.
 4.UpdraftPlus -> Settings ->Choose your remote storage -> Gdrive and login to LRS acc
 5.UpdraftPlus -> Existing backups  restore desired backups
   Could be troubles with Plugin part. Just download it  manually
+
+Camera emulate software https://obsproject.com/download
+

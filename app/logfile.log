@@ -583,6 +583,16 @@ AttributeError: '_io.TextIOWrapper' object has no attribute 'getvalue'
 [2024-04-21 10:51:19,621.621] INFO [8840] - Waiting for application startup.
 [2024-04-21 10:51:19,636.636] INFO [8840] - Application startup complete.
 [2024-04-21 10:51:19,636.636] INFO [8840] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-22 11:29:43,882.882] INFO [984] - Started server process [2580]
+[2024-04-22 11:29:43,882.882] INFO [984] - Waiting for application startup.
+[2024-04-22 11:29:43,883.883] INFO [984] - Application startup complete.
+[2024-04-22 11:29:43,883.883] INFO [984] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-22 11:30:20,784.784] INFO [984] - GET /logs - 200
+[2024-04-22 11:30:20,784.784] INFO [984] - 127.0.0.1:13158 - "GET /logs HTTP/1.1" 200
+[2024-04-22 11:30:20,784.784] INFO [984] - GET /logs - Completed in 0.000999 seconds
+[2024-04-22 11:30:21,187.187] INFO [984] - GET /favicon.ico - 404
+[2024-04-22 11:30:21,187.187] INFO [984] - 127.0.0.1:13158 - "GET /favicon.ico HTTP/1.1" 404
+[2024-04-22 11:30:21,187.187] INFO [984] - GET /favicon.ico - Completed in 0.000997 seconds
 [2024-04-21 10:55:40,938.938] INFO [8840] - Shutting down
 [2024-04-21 10:55:41,043.043] INFO [8840] - Waiting for application shutdown.
 [2024-04-21 10:55:41,043.043] INFO [8840] - Application shutdown complete.
