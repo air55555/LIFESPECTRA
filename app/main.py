@@ -9,6 +9,8 @@ from fastapi import FastAPI, Response
 import numpy as np
 import uvicorn
 import cv2
+WP_PORT="10004"
+WP_CAMERA_PAGE = "Camera1"
 cwd = pathlib.Path(__file__).parent.resolve()
 # Step 1: Setup Logging Configuration
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -96,7 +98,7 @@ async def slow_left():
 
 @app.get("/camera_up")
 async def capture_image():
-    return RedirectResponse("http://localhost:10004/camera1/")
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 
 @app.get("/capture")

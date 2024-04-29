@@ -835,3 +835,846 @@ AttributeError: '_io.TextIOWrapper' object has no attribute 'getvalue'
 [2024-04-28 15:53:17,745.745] INFO [3296] - GET /camera_up - 307
 [2024-04-28 15:53:17,746.746] INFO [3296] - 127.0.0.1:57552 - "GET /camera_up HTTP/1.1" 307
 [2024-04-28 15:53:17,749.749] INFO [3296] - GET /camera_up - Completed in 0.005042 seconds
+[2024-04-29 23:11:29,725.725] INFO [5604] - Started server process [9264]
+[2024-04-29 23:11:29,725.725] INFO [5604] - Waiting for application startup.
+[2024-04-29 23:11:29,725.725] INFO [5604] - Application startup complete.
+[2024-04-29 23:11:29,725.725] INFO [5604] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-29 23:13:11,144.144] INFO [3564] - Started server process [8524]
+[2024-04-29 23:13:11,144.144] INFO [3564] - Waiting for application startup.
+[2024-04-29 23:13:11,159.159] INFO [3564] - Application startup complete.
+[2024-04-29 23:13:11,191.191] INFO [3564] - Waiting for application shutdown.
+[2024-04-29 23:13:11,191.191] INFO [3564] - Application shutdown complete.
+[2024-04-29 23:13:50,805.805] INFO [5604] - GET /health - 200
+[2024-04-29 23:13:50,805.805] INFO [5604] - 127.0.0.1:50453 - "GET /health HTTP/1.1" 200
+[2024-04-29 23:13:50,805.805] INFO [5604] - GET /health - Completed in 0.0 seconds
+[2024-04-29 23:13:50,906.906] INFO [5604] - GET /favicon.ico - 404
+[2024-04-29 23:13:50,906.906] INFO [5604] - 127.0.0.1:50453 - "GET /favicon.ico HTTP/1.1" 404
+[2024-04-29 23:13:50,914.914] INFO [5604] - GET /favicon.ico - Completed in 0.008008 seconds
+[2024-04-29 23:16:09,394.394] INFO [5604] - GET /camera_up - 307
+[2024-04-29 23:16:09,395.395] INFO [5604] - 127.0.0.1:50524 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:16:09,397.397] INFO [5604] - GET /camera_up - Completed in 0.004 seconds
+[2024-04-29 23:18:34,273.273] INFO [10152] - Started server process [11016]
+[2024-04-29 23:18:34,273.273] INFO [10152] - Waiting for application startup.
+[2024-04-29 23:18:34,273.273] INFO [10152] - Application startup complete.
+[2024-04-29 23:18:34,273.273] INFO [10152] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-29 23:20:14,111.111] INFO [10152] - GET /image - 200
+[2024-04-29 23:20:14,111.111] INFO [10152] - 127.0.0.1:50594 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:20:14,146.146] INFO [10152] - GET /logs - 200
+[2024-04-29 23:20:14,146.146] INFO [10152] - 127.0.0.1:50599 - "GET /logs HTTP/1.1" 200
+[2024-04-29 23:20:14,146.146] INFO [10152] - GET /logs - Completed in 0.03507 seconds
+[2024-04-29 23:20:14,154.154] INFO [10152] - GET /image - Completed in 1.10805 seconds
+[2024-04-29 23:20:16,130.130] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:20:16,130.130] INFO [10152] - 127.0.0.1:50594 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:20:16,130.130] INFO [10152] - GET /camera_up - Completed in 0.008012 seconds
+[2024-04-29 23:20:21,307.307] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:20:21,307.307] INFO [10152] - 127.0.0.1:50595 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:20:21,307.307] INFO [10152] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-29 23:20:48,675.675] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:20:48,676.676] INFO [10152] - 127.0.0.1:50622 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:20:48,679.679] INFO [10152] - GET /camera_up - Completed in 0.003996 seconds
+[2024-04-29 23:20:50,560.560] INFO [10152] - GET /image - 200
+[2024-04-29 23:20:50,561.561] INFO [10152] - 127.0.0.1:50622 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:20:50,880.880] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:20:56,794.794] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:20:56,795.795] INFO [10152] - 127.0.0.1:50637 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:20:56,797.797] INFO [10152] - GET /camera_up - Completed in 0.004999 seconds
+[2024-04-29 23:20:58,592.592] INFO [10152] - GET /image - 200
+[2024-04-29 23:20:58,595.595] INFO [10152] - 127.0.0.1:50637 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:20:59,008.008] INFO [10152] - GET /image - Completed in 0.426752 seconds
+[2024-04-29 23:21:01,178.178] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:01,179.179] INFO [10152] - 127.0.0.1:50637 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:01,184.184] INFO [10152] - GET /camera_up - Completed in 0.005998 seconds
+[2024-04-29 23:21:03,041.041] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:03,042.042] INFO [10152] - 127.0.0.1:50637 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:03,125.125] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:21:07,595.595] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:07,596.596] INFO [10152] - 127.0.0.1:50649 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:07,601.601] INFO [10152] - GET /camera_up - Completed in 0.00699 seconds
+[2024-04-29 23:21:09,250.250] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:09,252.252] INFO [10152] - 127.0.0.1:50649 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:09,380.380] INFO [10152] - GET /image - Completed in 0.137921 seconds
+[2024-04-29 23:21:11,638.638] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:11,639.639] INFO [10152] - 127.0.0.1:50649 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:11,642.642] INFO [10152] - GET /camera_up - Completed in 0.003992 seconds
+[2024-04-29 23:21:13,344.344] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:13,347.347] INFO [10152] - 127.0.0.1:50649 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:13,509.509] INFO [10152] - GET /image - Completed in 0.169901 seconds
+[2024-04-29 23:21:15,188.188] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:15,188.188] INFO [10152] - 127.0.0.1:50649 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:15,190.190] INFO [10152] - GET /camera_up - Completed in 0.002997 seconds
+[2024-04-29 23:21:16,087.087] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:16,088.088] INFO [10152] - 127.0.0.1:50649 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:16,140.140] INFO [10152] - GET /image - Completed in 0.054966 seconds
+[2024-04-29 23:21:19,426.426] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:19,427.427] INFO [10152] - 127.0.0.1:50649 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:19,429.429] INFO [10152] - GET /camera_up - Completed in 0.003989 seconds
+[2024-04-29 23:21:21,000.000] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:21,001.001] INFO [10152] - 127.0.0.1:50649 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:21,142.142] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:21:23,689.689] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:23,690.690] INFO [10152] - 127.0.0.1:50670 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:23,693.693] INFO [10152] - GET /camera_up - Completed in 0.004998 seconds
+[2024-04-29 23:21:25,204.204] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:25,205.205] INFO [10152] - 127.0.0.1:50670 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:25,283.283] INFO [10152] - GET /image - Completed in 0.083952 seconds
+[2024-04-29 23:21:27,004.004] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:27,005.005] INFO [10152] - 127.0.0.1:50670 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:27,008.008] INFO [10152] - GET /camera_up - Completed in 0.004999 seconds
+[2024-04-29 23:21:28,523.523] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:28,524.524] INFO [10152] - 127.0.0.1:50670 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:28,576.576] INFO [10152] - GET /image - Completed in 0.056969 seconds
+[2024-04-29 23:21:30,117.117] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:30,118.118] INFO [10152] - 127.0.0.1:50670 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:30,120.120] INFO [10152] - GET /camera_up - Completed in 0.004997 seconds
+[2024-04-29 23:21:31,568.568] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:31,569.569] INFO [10152] - 127.0.0.1:50670 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:31,642.642] INFO [10152] - GET /image - Completed in 0.078962 seconds
+[2024-04-29 23:21:35,561.561] INFO [10152] - GET /camera_down - 404
+[2024-04-29 23:21:35,562.562] INFO [10152] - 127.0.0.1:50670 - "GET /camera_down HTTP/1.1" 404
+[2024-04-29 23:21:35,565.565] INFO [10152] - GET /camera_down - Completed in 0.005993 seconds
+[2024-04-29 23:21:40,541.541] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:40,542.542] INFO [10152] - 127.0.0.1:50670 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:40,545.545] INFO [10152] - GET /camera_up - Completed in 0.00499 seconds
+[2024-04-29 23:21:42,118.118] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:42,119.119] INFO [10152] - 127.0.0.1:50670 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:42,211.211] INFO [10152] - GET /image - Completed in 0.097944 seconds
+[2024-04-29 23:21:43,377.377] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:43,378.378] INFO [10152] - 127.0.0.1:50670 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:43,380.380] INFO [10152] - GET /camera_up - Completed in 0.004996 seconds
+[2024-04-29 23:21:44,637.637] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:44,641.641] INFO [10152] - 127.0.0.1:50670 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:44,809.809] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:21:47,837.837] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:47,838.838] INFO [10152] - 127.0.0.1:50709 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:47,841.841] INFO [10152] - GET /camera_up - Completed in 0.005 seconds
+[2024-04-29 23:21:49,302.302] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:49,303.303] INFO [10152] - 127.0.0.1:50709 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:49,436.436] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:21:51,163.163] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:51,164.164] INFO [10152] - 127.0.0.1:50748 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:51,167.167] INFO [10152] - GET /camera_up - Completed in 0.004997 seconds
+[2024-04-29 23:21:52,730.730] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:52,731.731] INFO [10152] - 127.0.0.1:50748 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:52,822.822] INFO [10152] - GET /image - Completed in 0.097944 seconds
+[2024-04-29 23:21:54,019.019] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:54,020.020] INFO [10152] - 127.0.0.1:50748 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:54,023.023] INFO [10152] - GET /camera_up - Completed in 0.004996 seconds
+[2024-04-29 23:21:55,483.483] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:55,485.485] INFO [10152] - 127.0.0.1:50748 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:55,617.617] INFO [10152] - GET /image - Completed in 0.13892 seconds
+[2024-04-29 23:21:56,849.849] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:56,850.850] INFO [10152] - 127.0.0.1:50748 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:56,853.853] INFO [10152] - GET /camera_up - Completed in 0.004998 seconds
+[2024-04-29 23:21:58,223.223] INFO [10152] - GET /image - 200
+[2024-04-29 23:21:58,225.225] INFO [10152] - 127.0.0.1:50748 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:21:58,325.325] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:21:59,596.596] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:21:59,597.597] INFO [10152] - 127.0.0.1:50759 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:21:59,599.599] INFO [10152] - GET /camera_up - Completed in 0.003993 seconds
+[2024-04-29 23:22:01,020.020] INFO [10152] - GET /image - 200
+[2024-04-29 23:22:01,021.021] INFO [10152] - 127.0.0.1:50759 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:22:01,117.117] INFO [10152] - GET /image - Completed in 0.102937 seconds
+[2024-04-29 23:22:23,018.018] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:22:23,019.019] INFO [10152] - 127.0.0.1:50774 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:22:23,023.023] INFO [10152] - GET /camera_up - Completed in 0.007 seconds
+[2024-04-29 23:22:24,955.955] INFO [10152] - GET /image - 200
+[2024-04-29 23:22:24,956.956] INFO [10152] - 127.0.0.1:50774 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:22:25,089.089] INFO [10152] - GET /image - Completed in 0.140919 seconds
+[2024-04-29 23:22:28,534.534] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:22:28,535.535] INFO [10152] - 127.0.0.1:50774 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:22:28,538.538] INFO [10152] - GET /camera_up - Completed in 0.005992 seconds
+[2024-04-29 23:22:30,150.150] INFO [10152] - GET /image - 200
+[2024-04-29 23:22:30,154.154] INFO [10152] - 127.0.0.1:50774 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:22:30,237.237] INFO [10152] - GET /image - Completed in 0.095944 seconds
+[2024-04-29 23:22:31,296.296] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:22:31,297.297] INFO [10152] - 127.0.0.1:50774 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:22:31,299.299] INFO [10152] - GET /camera_up - Completed in 0.003998 seconds
+[2024-04-29 23:22:32,433.433] INFO [10152] - GET /image - 200
+[2024-04-29 23:22:32,434.434] INFO [10152] - 127.0.0.1:50774 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:22:32,524.524] INFO [10152] - GET /image - Completed in 0.093947 seconds
+[2024-04-29 23:22:33,462.462] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:22:33,463.463] INFO [10152] - 127.0.0.1:50774 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:22:33,466.466] INFO [10152] - GET /camera_up - Completed in 0.004989 seconds
+[2024-04-29 23:22:34,884.884] INFO [10152] - GET /image - 200
+[2024-04-29 23:22:34,885.885] INFO [10152] - 127.0.0.1:50774 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:22:34,930.930] INFO [10152] - GET /image - Completed in 0.05097 seconds
+[2024-04-29 23:22:36,914.914] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:22:36,915.915] INFO [10152] - 127.0.0.1:50774 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:22:36,917.917] INFO [10152] - GET /camera_up - Completed in 0.004989 seconds
+[2024-04-29 23:22:38,316.316] INFO [10152] - GET /image - 200
+[2024-04-29 23:22:38,318.318] INFO [10152] - 127.0.0.1:50774 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:22:38,379.379] INFO [10152] - GET /image - Completed in 0.06696 seconds
+[2024-04-29 23:22:49,777.777] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:22:49,778.778] INFO [10152] - 127.0.0.1:50784 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:22:49,781.781] INFO [10152] - GET /camera_up - Completed in 0.003997 seconds
+[2024-04-29 23:22:51,713.713] INFO [10152] - GET /image - 200
+[2024-04-29 23:22:51,714.714] INFO [10152] - 127.0.0.1:50784 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:22:51,906.906] INFO [10152] - GET /image - Completed in 0.197884 seconds
+[2024-04-29 23:23:04,941.941] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:23:04,942.942] INFO [10152] - 127.0.0.1:50822 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:23:04,944.944] INFO [10152] - GET /camera_up - Completed in 0.003998 seconds
+[2024-04-29 23:23:06,488.488] INFO [10152] - GET /image - 200
+[2024-04-29 23:23:06,489.489] INFO [10152] - 127.0.0.1:50822 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:23:06,610.610] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:23:09,510.510] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:23:09,512.512] INFO [10152] - 127.0.0.1:50835 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:23:09,514.514] INFO [10152] - GET /camera_up - Completed in 0.003999 seconds
+[2024-04-29 23:23:10,970.970] INFO [10152] - GET /image - 200
+[2024-04-29 23:23:10,971.971] INFO [10152] - 127.0.0.1:50835 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:23:11,156.156] INFO [10152] - GET /image - Completed in 0.192886 seconds
+[2024-04-29 23:23:12,390.390] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:23:12,390.390] INFO [10152] - 127.0.0.1:50835 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:23:12,393.393] INFO [10152] - GET /camera_up - Completed in 0.003996 seconds
+[2024-04-29 23:23:13,863.863] INFO [10152] - GET /image - 200
+[2024-04-29 23:23:13,866.866] INFO [10152] - 127.0.0.1:50835 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:23:13,961.961] INFO [10152] - GET /image - Completed in 0.102943 seconds
+[2024-04-29 23:28:08,763.763] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:08,764.764] INFO [10152] - 127.0.0.1:50925 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:08,767.767] INFO [10152] - GET /camera_up - Completed in 0.010995 seconds
+[2024-04-29 23:28:10,709.709] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:10,712.712] INFO [10152] - 127.0.0.1:50925 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:10,835.835] INFO [10152] - GET /image - Completed in 0.130924 seconds
+[2024-04-29 23:28:12,964.964] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:12,965.965] INFO [10152] - 127.0.0.1:50925 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:12,967.967] INFO [10152] - GET /camera_up - Completed in 0.006996 seconds
+[2024-04-29 23:28:14,590.590] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:14,591.591] INFO [10152] - 127.0.0.1:50925 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:14,707.707] INFO [10152] - GET /image - Completed in 0.122928 seconds
+[2024-04-29 23:28:17,520.520] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:17,521.521] INFO [10152] - 127.0.0.1:50925 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:17,524.524] INFO [10152] - GET /camera_up - Completed in 0.003997 seconds
+[2024-04-29 23:28:19,136.136] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:19,137.137] INFO [10152] - 127.0.0.1:50925 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:19,251.251] INFO [10152] - GET /image - Completed in 0.115936 seconds
+[2024-04-29 23:28:21,407.407] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:21,408.408] INFO [10152] - 127.0.0.1:50925 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:21,410.410] INFO [10152] - GET /camera_up - Completed in 0.00399 seconds
+[2024-04-29 23:28:22,789.789] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:22,791.791] INFO [10152] - 127.0.0.1:50925 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:22,987.987] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:28:25,240.240] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:25,241.241] INFO [10152] - 127.0.0.1:50926 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:25,244.244] INFO [10152] - GET /camera_up - Completed in 0.005001 seconds
+[2024-04-29 23:28:26,725.725] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:26,727.727] INFO [10152] - 127.0.0.1:50926 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:26,852.852] INFO [10152] - GET /image - Completed in 0.131923 seconds
+[2024-04-29 23:28:30,907.907] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:30,908.908] INFO [10152] - 127.0.0.1:50926 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:30,911.911] INFO [10152] - GET /camera_up - Completed in 0.005999 seconds
+[2024-04-29 23:28:32,431.431] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:32,432.432] INFO [10152] - 127.0.0.1:50926 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:32,506.506] INFO [10152] - GET /image - Completed in 0.080951 seconds
+[2024-04-29 23:28:34,151.151] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:34,152.152] INFO [10152] - 127.0.0.1:50926 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:34,155.155] INFO [10152] - GET /camera_up - Completed in 0.004997 seconds
+[2024-04-29 23:28:35,832.832] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:35,833.833] INFO [10152] - 127.0.0.1:50926 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:35,901.901] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-29 23:28:44,661.661] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:44,661.661] INFO [10152] - 127.0.0.1:50929 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:44,663.663] INFO [10152] - GET /camera_up - Completed in 0.003 seconds
+[2024-04-29 23:28:46,129.129] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:46,130.130] INFO [10152] - 127.0.0.1:50929 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:46,149.149] ERROR [10152] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 511, in send
+    output = self.conn.send(event=h11.EndOfMessage())
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 67, in __call__
+    self.send_eom(event.headers, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 96, in send_eom
+    raise LocalProtocolError("Too little data for declared Content-Length")
+h11._util.LocalProtocolError: Too little data for declared Content-Length
+[2024-04-29 23:28:47,779.779] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:47,780.780] INFO [10152] - 127.0.0.1:50989 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:47,782.782] INFO [10152] - GET /camera_up - Completed in 0.003998 seconds
+[2024-04-29 23:28:49,225.225] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:49,226.226] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:49,364.364] INFO [10152] - GET /image - Completed in 0.144916 seconds
+[2024-04-29 23:28:51,611.611] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:51,612.612] INFO [10152] - 127.0.0.1:50989 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:51,614.614] INFO [10152] - GET /camera_up - Completed in 0.005 seconds
+[2024-04-29 23:28:53,095.095] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:53,096.096] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:53,217.217] INFO [10152] - GET /image - Completed in 0.130926 seconds
+[2024-04-29 23:28:54,945.945] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:54,946.946] INFO [10152] - 127.0.0.1:50989 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:54,948.948] INFO [10152] - GET /camera_up - Completed in 0.002991 seconds
+[2024-04-29 23:28:56,410.410] INFO [10152] - GET /image - 200
+[2024-04-29 23:28:56,412.412] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:28:56,471.471] INFO [10152] - GET /image - Completed in 0.072955 seconds
+[2024-04-29 23:28:58,596.596] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:28:58,597.597] INFO [10152] - 127.0.0.1:50989 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:28:58,599.599] INFO [10152] - GET /camera_up - Completed in 0.003998 seconds
+[2024-04-29 23:29:00,148.148] INFO [10152] - GET /image - 200
+[2024-04-29 23:29:00,149.149] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:29:00,216.216] INFO [10152] - GET /image - Completed in 0.073393 seconds
+[2024-04-29 23:29:02,514.514] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:29:02,514.514] INFO [10152] - 127.0.0.1:50989 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:29:02,516.516] INFO [10152] - GET /camera_up - Completed in 0.003 seconds
+[2024-04-29 23:29:04,061.061] INFO [10152] - GET /image - 200
+[2024-04-29 23:29:04,063.063] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:29:04,178.178] INFO [10152] - GET /image - Completed in 0.125927 seconds
+[2024-04-29 23:29:05,964.964] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:29:05,965.965] INFO [10152] - 127.0.0.1:50989 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:29:05,969.969] INFO [10152] - GET /camera_up - Completed in 0.006995 seconds
+[2024-04-29 23:29:07,609.609] INFO [10152] - GET /image - 200
+[2024-04-29 23:29:07,610.610] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:29:07,667.667] INFO [10152] - GET /image - Completed in 0.061963 seconds
+[2024-04-29 23:29:11,547.547] INFO [10152] - GET /camera_up - 307
+[2024-04-29 23:29:11,547.547] INFO [10152] - 127.0.0.1:50989 - "GET /camera_up HTTP/1.1" 307
+[2024-04-29 23:29:11,549.549] INFO [10152] - GET /camera_up - Completed in 0.002998 seconds
+[2024-04-29 23:29:13,098.098] INFO [10152] - GET /image - 200
+[2024-04-29 23:29:13,100.100] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
+[2024-04-29 23:29:13,192.192] INFO [10152] - GET /image - Completed in 0.097952 seconds
