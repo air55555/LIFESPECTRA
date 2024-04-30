@@ -2084,3 +2084,7 @@ h11._util.LocalProtocolError: Too little data for declared Content-Length
 [2024-04-30 09:16:44,145.145] INFO [4992] - GET /favicon.ico - 404
 [2024-04-30 09:16:44,145.145] INFO [4992] - 127.0.0.1:30385 - "GET /favicon.ico HTTP/1.1" 404
 [2024-04-30 09:16:44,145.145] INFO [4992] - GET /favicon.ico - Completed in 0.0 seconds
+[2024-04-30 09:17:13,047.047] INFO [5784] - Started server process [18060]
+[2024-04-30 09:17:13,047.047] INFO [5784] - Waiting for application startup.
+[2024-04-30 09:17:13,048.048] INFO [5784] - Application startup complete.
+[2024-04-30 09:17:13,048.048] INFO [5784] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
