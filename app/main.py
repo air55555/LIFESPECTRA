@@ -92,14 +92,24 @@ def redirect_url(default='index'):
            request.referrer
 
 
-@app.get("/slow_left")
-async def slow_left():
-    return ""
+@app.get("/camera_home")
+async def capture_image():
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/camera_up")
 async def capture_image():
     return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
+@app.get("/camera_down")
+async def capture_image():
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+
+@app.get("/camera_left")
+async def capture_image():
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+@app.get("/camera_right")
+async def capture_image():
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/capture")
 async def capture_image():
