@@ -29,6 +29,15 @@ Wordpress install.
 5.UpdraftPlus -> Existing backups  restore desired backups
   Could be troubles with Plugin part. Just download it  manually
 
+Hint - When  making new backups  unselecty this "Must-use plugins"- causing errors .
+ Include your files in the backup (...)
+Your saved settings also affect what is backed up - e.g. files excluded.
+ Plugins
+ Themes
+ Uploads
+ Must-use plugins
+ Any other directories found inside wp-content
+
 Camera emulate software https://obsproject.com/download
 
 Use Slimjet fast browser Press F12, Go to Network > check disable cache
