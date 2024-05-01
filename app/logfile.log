@@ -1678,3 +1678,745 @@ h11._util.LocalProtocolError: Too little data for declared Content-Length
 [2024-04-29 23:29:13,098.098] INFO [10152] - GET /image - 200
 [2024-04-29 23:29:13,100.100] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
 [2024-04-29 23:29:13,192.192] INFO [10152] - GET /image - Completed in 0.097952 seconds
+[2024-04-30 09:09:46,361.361] INFO [4992] - Started server process [21412]
+[2024-04-30 09:09:46,362.362] INFO [4992] - Waiting for application startup.
+[2024-04-30 09:09:46,362.362] INFO [4992] - Application startup complete.
+[2024-04-30 09:09:46,362.362] INFO [4992] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-30 09:10:04,947.947] INFO [4992] - GET /logs - 200
+[2024-04-30 09:10:04,947.947] INFO [4992] - 127.0.0.1:3853 - "GET /logs HTTP/1.1" 200
+[2024-04-30 09:10:04,947.947] INFO [4992] - GET /logs - Completed in 0.001994 seconds
+[2024-04-30 09:10:07,411.411] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:07,411.411] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:07,413.413] INFO [4992] - GET /image - Completed in 0.149595 seconds
+[2024-04-30 09:10:08,276.276] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:10:08,276.276] INFO [4992] - 127.0.0.1:3872 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:10:08,276.276] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:10:08,510.510] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:08,511.511] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:08,513.513] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:10:09,451.451] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:10:09,451.451] INFO [4992] - 127.0.0.1:3872 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:10:09,452.452] INFO [4992] - GET /camera_up - Completed in 0.001029 seconds
+[2024-04-30 09:10:09,674.674] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:09,674.674] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:09,678.678] INFO [4992] - GET /image - Completed in 0.005984 seconds
+[2024-04-30 09:10:10,853.853] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:10:10,853.853] INFO [4992] - 127.0.0.1:3872 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:10:10,854.854] INFO [4992] - GET /camera_down - Completed in 0.001 seconds
+[2024-04-30 09:10:11,095.095] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:11,095.095] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:11,097.097] INFO [4992] - GET /image - Completed in 0.002963 seconds
+[2024-04-30 09:10:12,421.421] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:10:12,421.421] INFO [4992] - 127.0.0.1:3872 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:10:12,421.421] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:10:12,712.712] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:12,712.712] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:12,716.716] INFO [4992] - GET /image - Completed in 0.00399 seconds
+[2024-04-30 09:10:13,742.742] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:10:13,742.742] INFO [4992] - 127.0.0.1:3872 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:10:13,742.742] INFO [4992] - GET /camera_down - Completed in 0.000998 seconds
+[2024-04-30 09:10:13,924.924] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:13,924.924] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:13,926.926] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:10:16,206.206] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:10:16,206.206] INFO [4992] - 127.0.0.1:3872 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:10:16,206.206] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:10:16,393.393] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:16,394.394] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:16,396.396] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:10:16,892.892] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:10:16,892.892] INFO [4992] - 127.0.0.1:3872 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:10:16,893.893] INFO [4992] - GET /camera_down - Completed in 0.001025 seconds
+[2024-04-30 09:10:17,106.106] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:17,107.107] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:17,108.108] INFO [4992] - GET /image - Completed in 0.001996 seconds
+[2024-04-30 09:10:17,773.773] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:10:17,774.774] INFO [4992] - 127.0.0.1:3872 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:10:17,774.774] INFO [4992] - GET /camera_right - Completed in 0.000995 seconds
+[2024-04-30 09:10:18,061.061] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:18,061.061] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:18,062.062] INFO [4992] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:10:18,589.589] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:10:18,589.589] INFO [4992] - 127.0.0.1:3872 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:10:18,590.590] INFO [4992] - GET /camera_right - Completed in 0.000998 seconds
+[2024-04-30 09:10:18,760.760] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:18,760.760] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:18,762.762] INFO [4992] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:10:19,533.533] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:10:19,533.533] INFO [4992] - 127.0.0.1:3872 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:10:19,533.533] INFO [4992] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:10:19,760.760] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:19,760.760] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:19,763.763] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:10:20,222.222] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:10:20,223.223] INFO [4992] - 127.0.0.1:3872 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:10:20,223.223] INFO [4992] - GET /camera_left - Completed in 0.000998 seconds
+[2024-04-30 09:10:20,393.393] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:20,393.393] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:20,395.395] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:10:20,893.893] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:10:20,893.893] INFO [4992] - 127.0.0.1:3872 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:10:20,893.893] INFO [4992] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:10:21,210.210] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:21,210.210] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:21,213.213] INFO [4992] - GET /image - Completed in 0.003989 seconds
+[2024-04-30 09:10:21,670.670] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:10:21,670.670] INFO [4992] - 127.0.0.1:3872 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:10:21,671.671] INFO [4992] - GET /camera_left - Completed in 0.000997 seconds
+[2024-04-30 09:10:21,869.869] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:21,869.869] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:21,873.873] INFO [4992] - GET /image - Completed in 0.00399 seconds
+[2024-04-30 09:10:22,574.574] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:10:22,574.574] INFO [4992] - 127.0.0.1:3872 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:10:22,574.574] INFO [4992] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:10:22,811.811] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:22,811.811] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:22,813.813] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:10:23,334.334] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:10:23,334.334] INFO [4992] - 127.0.0.1:3872 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:10:23,334.334] INFO [4992] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:10:23,535.535] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:23,535.535] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:23,538.538] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:10:24,160.160] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:10:24,160.160] INFO [4992] - 127.0.0.1:3872 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:10:24,160.160] INFO [4992] - GET /camera_right - Completed in 0.000998 seconds
+[2024-04-30 09:10:24,347.347] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:24,347.347] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:24,350.350] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:10:25,071.071] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:10:25,071.071] INFO [4992] - 127.0.0.1:3872 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:10:25,071.071] INFO [4992] - GET /camera_up - Completed in 0.000994 seconds
+[2024-04-30 09:10:25,345.345] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:25,346.346] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:25,349.349] INFO [4992] - GET /image - Completed in 0.003989 seconds
+[2024-04-30 09:10:26,062.062] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:10:26,062.062] INFO [4992] - 127.0.0.1:3872 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:10:26,062.062] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:10:26,257.257] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:26,257.257] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:26,260.260] INFO [4992] - GET /image - Completed in 0.003989 seconds
+[2024-04-30 09:10:27,199.199] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:10:27,199.199] INFO [4992] - 127.0.0.1:3872 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:10:27,199.199] INFO [4992] - GET /camera_up - Completed in 0.001006 seconds
+[2024-04-30 09:10:27,377.377] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:27,377.377] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:27,379.379] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:10:29,694.694] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:10:29,694.694] INFO [4992] - 127.0.0.1:3872 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:10:29,694.694] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:10:29,925.925] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:29,926.926] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:29,928.928] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:10:30,589.589] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:10:30,589.589] INFO [4992] - 127.0.0.1:3872 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:10:30,589.589] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:10:30,802.802] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:30,802.802] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:30,804.804] INFO [4992] - GET /image - Completed in 0.002991 seconds
+[2024-04-30 09:10:32,822.822] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:10:32,822.822] INFO [4992] - 127.0.0.1:3872 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:10:32,823.823] INFO [4992] - GET /camera_down - Completed in 0.000998 seconds
+[2024-04-30 09:10:33,022.022] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:33,022.022] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:33,024.024] INFO [4992] - GET /image - Completed in 0.002994 seconds
+[2024-04-30 09:10:34,021.021] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:10:34,022.022] INFO [4992] - 127.0.0.1:3872 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:10:34,022.022] INFO [4992] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:10:34,203.203] INFO [4992] - GET /image - 200
+[2024-04-30 09:10:34,203.203] INFO [4992] - 127.0.0.1:3872 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:10:34,205.205] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:14:47,595.595] INFO [4992] - GET /image - 200
+[2024-04-30 09:14:47,595.595] INFO [4992] - 127.0.0.1:30101 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:14:47,597.597] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:14:49,205.205] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:14:49,205.205] INFO [4992] - 127.0.0.1:30101 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:14:49,206.206] INFO [4992] - GET /camera_up - Completed in 0.000997 seconds
+[2024-04-30 09:14:49,495.495] INFO [4992] - GET /image - 200
+[2024-04-30 09:14:49,495.495] INFO [4992] - 127.0.0.1:30101 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:14:49,496.496] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:14:52,413.413] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:14:52,414.414] INFO [4992] - 127.0.0.1:30101 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:14:52,414.414] INFO [4992] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:14:52,620.620] INFO [4992] - GET /image - 200
+[2024-04-30 09:14:52,621.621] INFO [4992] - 127.0.0.1:30101 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:14:52,623.623] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:14:53,381.381] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:14:53,381.381] INFO [4992] - 127.0.0.1:30101 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:14:53,381.381] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:14:53,607.607] INFO [4992] - GET /image - 200
+[2024-04-30 09:14:53,607.607] INFO [4992] - 127.0.0.1:30101 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:14:53,609.609] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:15:18,231.231] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:18,231.231] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:18,233.233] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:15:19,734.734] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:19,734.734] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:19,734.734] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:15:20,045.045] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:20,045.045] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:20,047.047] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:15:20,548.548] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:20,548.548] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:20,549.549] INFO [4992] - GET /camera_up - Completed in 0.000996 seconds
+[2024-04-30 09:15:20,847.847] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:20,847.847] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:20,849.849] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:15:21,950.950] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:15:21,950.950] INFO [4992] - 127.0.0.1:30104 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:15:21,951.951] INFO [4992] - GET /camera_right - Completed in 0.00101 seconds
+[2024-04-30 09:15:22,220.220] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:22,220.220] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:22,222.222] INFO [4992] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:15:23,316.316] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:23,316.316] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:23,317.317] INFO [4992] - GET /camera_down - Completed in 0.000997 seconds
+[2024-04-30 09:15:23,702.702] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:23,702.702] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:23,704.704] INFO [4992] - GET /image - Completed in 0.002991 seconds
+[2024-04-30 09:15:24,796.796] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:15:24,797.797] INFO [4992] - 127.0.0.1:30104 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:15:24,797.797] INFO [4992] - GET /camera_left - Completed in 0.000998 seconds
+[2024-04-30 09:15:25,079.079] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:25,079.079] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:25,081.081] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:15:25,711.711] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:15:25,711.711] INFO [4992] - 127.0.0.1:30104 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:15:25,711.711] INFO [4992] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:15:26,008.008] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:26,008.008] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:26,010.010] INFO [4992] - GET /image - Completed in 0.001996 seconds
+[2024-04-30 09:15:26,510.510] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:26,510.510] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:26,510.510] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:15:26,757.757] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:26,757.757] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:26,759.759] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:15:27,581.581] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:27,581.581] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:27,581.581] INFO [4992] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:15:27,769.769] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:27,769.769] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:27,771.771] INFO [4992] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:15:28,140.140] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:28,141.141] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:28,141.141] INFO [4992] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:15:28,362.362] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:28,362.362] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:28,364.364] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:15:28,764.764] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:28,765.765] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:28,765.765] INFO [4992] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:15:28,990.990] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:28,990.990] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:28,992.992] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:15:29,381.381] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:29,381.381] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:29,382.382] INFO [4992] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:15:29,642.642] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:29,642.642] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:29,644.644] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:15:30,061.061] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:30,061.061] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:30,061.061] INFO [4992] - GET /camera_up - Completed in 0.000997 seconds
+[2024-04-30 09:15:30,468.468] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:30,468.468] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:30,470.470] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:15:30,983.983] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:30,983.983] INFO [4992] - 127.0.0.1:30104 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:30,983.983] INFO [4992] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:15:31,125.125] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:31,125.125] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:31,127.127] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:15:32,789.789] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:32,789.789] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:32,789.789] INFO [4992] - GET /camera_down - Completed in 0.000997 seconds
+[2024-04-30 09:15:33,084.084] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:33,084.084] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:33,086.086] INFO [4992] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:15:34,165.165] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:34,165.165] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:34,165.165] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:15:34,582.582] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:34,582.582] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:34,584.584] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:15:35,156.156] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:35,156.156] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:35,156.156] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:15:35,413.413] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:35,413.413] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:35,415.415] INFO [4992] - GET /image - Completed in 0.001996 seconds
+[2024-04-30 09:15:37,117.117] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:37,117.117] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:37,118.118] INFO [4992] - GET /camera_down - Completed in 0.000998 seconds
+[2024-04-30 09:15:37,378.378] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:37,379.379] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:37,381.381] INFO [4992] - GET /image - Completed in 0.001996 seconds
+[2024-04-30 09:15:39,645.645] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:39,645.645] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:39,646.646] INFO [4992] - GET /camera_down - Completed in 0.000997 seconds
+[2024-04-30 09:15:39,819.819] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:39,819.819] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:39,821.821] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:15:40,398.398] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:40,398.398] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:40,398.398] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:15:40,677.677] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:40,677.677] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:40,679.679] INFO [4992] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:15:41,236.236] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:41,237.237] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:41,237.237] INFO [4992] - GET /camera_down - Completed in 0.000999 seconds
+[2024-04-30 09:15:41,399.399] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:41,400.400] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:41,401.401] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:15:41,949.949] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:41,949.949] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:41,949.949] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:15:42,120.120] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:42,120.120] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:42,121.121] INFO [4992] - GET /image - Completed in 0.001993 seconds
+[2024-04-30 09:15:42,581.581] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:42,582.582] INFO [4992] - 127.0.0.1:30104 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:42,582.582] INFO [4992] - GET /camera_down - Completed in 0.001025 seconds
+[2024-04-30 09:15:42,761.761] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:42,761.761] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:42,764.764] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:15:43,341.341] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:15:43,341.341] INFO [4992] - 127.0.0.1:30104 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:15:43,342.342] INFO [4992] - GET /camera_left - Completed in 0.000998 seconds
+[2024-04-30 09:15:43,520.520] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:43,521.521] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:43,522.522] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:15:44,245.245] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:15:44,245.245] INFO [4992] - 127.0.0.1:30104 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:15:44,245.245] INFO [4992] - GET /camera_right - Completed in 0.000998 seconds
+[2024-04-30 09:15:44,418.418] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:44,418.418] INFO [4992] - 127.0.0.1:30104 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:44,420.420] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:15:56,613.613] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:56,614.614] INFO [4992] - 127.0.0.1:30186 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:56,614.614] INFO [4992] - GET /camera_up - Completed in 0.001005 seconds
+[2024-04-30 09:15:56,812.812] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:56,812.812] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:56,814.814] INFO [4992] - GET /image - Completed in 0.001984 seconds
+[2024-04-30 09:15:57,621.621] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:15:57,621.621] INFO [4992] - 127.0.0.1:30186 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:15:57,621.621] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:15:57,787.787] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:57,787.787] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:57,790.790] INFO [4992] - GET /image - Completed in 0.003988 seconds
+[2024-04-30 09:15:58,733.733] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:15:58,733.733] INFO [4992] - 127.0.0.1:30186 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:15:58,734.734] INFO [4992] - GET /camera_down - Completed in 0.000998 seconds
+[2024-04-30 09:15:58,885.885] INFO [4992] - GET /image - 200
+[2024-04-30 09:15:58,885.885] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:15:58,887.887] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:15:59,977.977] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:15:59,977.977] INFO [4992] - 127.0.0.1:30186 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:15:59,978.978] INFO [4992] - GET /camera_left - Completed in 0.000998 seconds
+[2024-04-30 09:16:00,143.143] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:00,144.144] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:00,145.145] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:16:00,700.700] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:16:00,700.700] INFO [4992] - 127.0.0.1:30186 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:16:00,700.700] INFO [4992] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:16:00,860.860] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:00,861.861] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:00,862.862] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:16:01,325.325] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:16:01,325.325] INFO [4992] - 127.0.0.1:30186 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:16:01,325.325] INFO [4992] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:16:01,473.473] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:01,473.473] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:01,476.476] INFO [4992] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:16:02,069.069] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:16:02,069.069] INFO [4992] - 127.0.0.1:30186 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:16:02,069.069] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:16:02,267.267] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:02,267.267] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:02,269.269] INFO [4992] - GET /image - Completed in 0.002964 seconds
+[2024-04-30 09:16:03,052.052] INFO [4992] - GET /camera_down - 307
+[2024-04-30 09:16:03,052.052] INFO [4992] - 127.0.0.1:30186 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:16:03,052.052] INFO [4992] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:16:03,216.216] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:03,216.216] INFO [4992] - 127.0.0.1:30186 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:03,218.218] INFO [4992] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:16:08,669.669] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:16:08,669.669] INFO [4992] - 127.0.0.1:30334 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:16:08,669.669] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:16:08,815.815] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:08,815.815] INFO [4992] - 127.0.0.1:30334 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:08,817.817] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:16:09,116.116] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:16:09,116.116] INFO [4992] - 127.0.0.1:30334 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:16:09,117.117] INFO [4992] - GET /camera_up - Completed in 0.00102 seconds
+[2024-04-30 09:16:09,282.282] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:09,282.282] INFO [4992] - 127.0.0.1:30334 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:09,284.284] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:16:09,733.733] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:16:09,733.733] INFO [4992] - 127.0.0.1:30334 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:16:09,733.733] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:16:09,918.918] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:09,918.918] INFO [4992] - 127.0.0.1:30334 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:09,920.920] INFO [4992] - GET /image - Completed in 0.001967 seconds
+[2024-04-30 09:16:10,125.125] INFO [4992] - GET /camera_up - 307
+[2024-04-30 09:16:10,125.125] INFO [4992] - 127.0.0.1:30334 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:16:10,125.125] INFO [4992] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:16:10,306.306] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:10,306.306] INFO [4992] - 127.0.0.1:30334 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:10,307.307] INFO [4992] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:16:10,582.582] INFO [4992] - GET /camera_right - 307
+[2024-04-30 09:16:10,582.582] INFO [4992] - 127.0.0.1:30334 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:16:10,582.582] INFO [4992] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:16:10,744.744] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:10,744.744] INFO [4992] - 127.0.0.1:30334 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:10,746.746] INFO [4992] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:16:11,518.518] INFO [4992] - GET /camera_left - 307
+[2024-04-30 09:16:11,518.518] INFO [4992] - 127.0.0.1:30334 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:16:11,518.518] INFO [4992] - GET /camera_left - Completed in 0.000997 seconds
+[2024-04-30 09:16:11,694.694] INFO [4992] - GET /image - 200
+[2024-04-30 09:16:11,694.694] INFO [4992] - 127.0.0.1:30334 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:16:11,695.695] INFO [4992] - GET /image - Completed in 0.002955 seconds
+[2024-04-30 09:16:44,132.132] INFO [4992] - GET /camera_home - 404
+[2024-04-30 09:16:44,132.132] INFO [4992] - 127.0.0.1:30385 - "GET /camera_home HTTP/1.1" 404
+[2024-04-30 09:16:44,133.133] INFO [4992] - GET /camera_home - Completed in 0.001019 seconds
+[2024-04-30 09:16:44,145.145] INFO [4992] - GET /favicon.ico - 404
+[2024-04-30 09:16:44,145.145] INFO [4992] - 127.0.0.1:30385 - "GET /favicon.ico HTTP/1.1" 404
+[2024-04-30 09:16:44,145.145] INFO [4992] - GET /favicon.ico - Completed in 0.0 seconds
+[2024-04-30 09:17:13,047.047] INFO [5784] - Started server process [18060]
+[2024-04-30 09:17:13,047.047] INFO [5784] - Waiting for application startup.
+[2024-04-30 09:17:13,048.048] INFO [5784] - Application startup complete.
+[2024-04-30 09:17:13,048.048] INFO [5784] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-04-30 09:17:38,981.981] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:17:38,981.981] INFO [5784] - 127.0.0.1:30519 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:17:38,982.982] INFO [5784] - GET /camera_home - Completed in 0.000997 seconds
+[2024-04-30 09:17:39,347.347] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:39,347.347] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:39,349.349] INFO [5784] - GET /image - Completed in 0.155584 seconds
+[2024-04-30 09:17:39,900.900] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:17:39,900.900] INFO [5784] - 127.0.0.1:30519 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:17:39,901.901] INFO [5784] - GET /camera_left - Completed in 0.000998 seconds
+[2024-04-30 09:17:40,074.074] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:40,074.074] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:40,076.076] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:17:40,580.580] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:17:40,580.580] INFO [5784] - 127.0.0.1:30519 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:17:40,580.580] INFO [5784] - GET /camera_right - Completed in 0.000995 seconds
+[2024-04-30 09:17:40,753.753] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:40,753.753] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:40,755.755] INFO [5784] - GET /image - Completed in 0.001967 seconds
+[2024-04-30 09:17:41,369.369] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:17:41,370.370] INFO [5784] - 127.0.0.1:30519 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:17:41,370.370] INFO [5784] - GET /camera_up - Completed in 0.000968 seconds
+[2024-04-30 09:17:41,581.581] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:41,582.582] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:41,585.585] INFO [5784] - GET /image - Completed in 0.00399 seconds
+[2024-04-30 09:17:42,030.030] INFO [5784] - GET /camera_down - 307
+[2024-04-30 09:17:42,030.030] INFO [5784] - 127.0.0.1:30519 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:17:42,031.031] INFO [5784] - GET /camera_down - Completed in 0.000997 seconds
+[2024-04-30 09:17:42,215.215] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:42,215.215] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:42,217.217] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:17:42,668.668] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:17:42,669.669] INFO [5784] - 127.0.0.1:30519 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:17:42,669.669] INFO [5784] - GET /camera_left - Completed in 0.000997 seconds
+[2024-04-30 09:17:43,154.154] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:43,154.154] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:43,156.156] INFO [5784] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:17:43,301.301] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:17:43,302.302] INFO [5784] - 127.0.0.1:30519 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:17:43,302.302] INFO [5784] - GET /camera_right - Completed in 0.000998 seconds
+[2024-04-30 09:17:43,447.447] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:43,447.447] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:43,449.449] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:17:44,709.709] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:17:44,709.709] INFO [5784] - 127.0.0.1:30519 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:17:44,709.709] INFO [5784] - GET /camera_home - Completed in 0.000998 seconds
+[2024-04-30 09:17:44,887.887] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:44,887.887] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:44,889.889] INFO [5784] - GET /image - Completed in 0.003002 seconds
+[2024-04-30 09:17:45,660.660] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:17:45,660.660] INFO [5784] - 127.0.0.1:30519 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:17:45,661.661] INFO [5784] - GET /camera_home - Completed in 0.000997 seconds
+[2024-04-30 09:17:45,808.808] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:45,808.808] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:45,810.810] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:17:46,420.420] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:17:46,421.421] INFO [5784] - 127.0.0.1:30519 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:17:46,421.421] INFO [5784] - GET /camera_up - Completed in 0.000997 seconds
+[2024-04-30 09:17:46,636.636] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:46,636.636] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:46,638.638] INFO [5784] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:17:47,165.165] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:17:47,165.165] INFO [5784] - 127.0.0.1:30519 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:17:47,165.165] INFO [5784] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:17:47,350.350] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:47,350.350] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:47,352.352] INFO [5784] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:17:48,051.051] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:17:48,051.051] INFO [5784] - 127.0.0.1:30519 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:17:48,051.051] INFO [5784] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:17:48,223.223] INFO [5784] - GET /image - 200
+[2024-04-30 09:17:48,223.223] INFO [5784] - 127.0.0.1:30519 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:17:48,225.225] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:18:17,309.309] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:18:17,309.309] INFO [5784] - 127.0.0.1:30520 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:18:17,309.309] INFO [5784] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:18:17,502.502] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:17,502.502] INFO [5784] - 127.0.0.1:30520 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:17,504.504] INFO [5784] - GET /image - Completed in 0.002959 seconds
+[2024-04-30 09:18:18,038.038] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:18:18,038.038] INFO [5784] - 127.0.0.1:30520 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:18:18,039.039] INFO [5784] - GET /camera_left - Completed in 0.000998 seconds
+[2024-04-30 09:18:18,207.207] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:18,207.207] INFO [5784] - 127.0.0.1:30520 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:18,208.208] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:18:18,731.731] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:18:18,732.732] INFO [5784] - 127.0.0.1:30520 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:18:18,732.732] INFO [5784] - GET /camera_left - Completed in 0.000998 seconds
+[2024-04-30 09:18:18,888.888] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:18,888.888] INFO [5784] - 127.0.0.1:30520 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:18,890.890] INFO [5784] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:18:19,700.700] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:18:19,700.700] INFO [5784] - 127.0.0.1:30520 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:18:19,701.701] INFO [5784] - GET /camera_up - Completed in 0.000998 seconds
+[2024-04-30 09:18:19,865.865] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:19,865.865] INFO [5784] - 127.0.0.1:30520 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:19,866.866] INFO [5784] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:18:20,356.356] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:18:20,356.356] INFO [5784] - 127.0.0.1:30520 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:18:20,356.356] INFO [5784] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:18:20,555.555] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:20,555.555] INFO [5784] - 127.0.0.1:30520 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:20,556.556] ERROR [5784] - Exception in ASGI application
+Traceback (most recent call last):
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "s:/Users/LRS/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "s:/Users/LRS/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "S:\Users\LRS\PycharmProjects\LIFESPECTRA_JUP\.venv\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-04-30 09:18:22,860.860] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:18:22,860.860] INFO [5784] - 127.0.0.1:30530 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:18:22,861.861] INFO [5784] - GET /camera_up - Completed in 0.000997 seconds
+[2024-04-30 09:18:23,037.037] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:23,037.037] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:23,039.039] INFO [5784] - GET /image - Completed in 0.001996 seconds
+[2024-04-30 09:18:23,684.684] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:18:23,684.684] INFO [5784] - 127.0.0.1:30530 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:18:23,684.684] INFO [5784] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:18:23,849.849] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:23,849.849] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:23,851.851] INFO [5784] - GET /image - Completed in 0.002023 seconds
+[2024-04-30 09:18:24,325.325] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:18:24,325.325] INFO [5784] - 127.0.0.1:30530 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:18:24,326.326] INFO [5784] - GET /camera_up - Completed in 0.000997 seconds
+[2024-04-30 09:18:24,489.489] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:24,490.490] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:24,491.491] INFO [5784] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:18:25,229.229] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:18:25,229.229] INFO [5784] - 127.0.0.1:30530 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:18:25,229.229] INFO [5784] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:18:25,396.396] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:25,396.396] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:25,398.398] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:18:25,878.878] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:18:25,878.878] INFO [5784] - 127.0.0.1:30530 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:18:25,878.878] INFO [5784] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:18:26,091.091] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:26,092.092] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:26,094.094] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:18:26,516.516] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:18:26,516.516] INFO [5784] - 127.0.0.1:30530 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:18:26,516.516] INFO [5784] - GET /camera_right - Completed in 0.000992 seconds
+[2024-04-30 09:18:26,678.678] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:26,678.678] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:26,680.680] INFO [5784] - GET /image - Completed in 0.001965 seconds
+[2024-04-30 09:18:27,132.132] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:18:27,132.132] INFO [5784] - 127.0.0.1:30530 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:18:27,132.132] INFO [5784] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:18:27,308.308] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:27,308.308] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:27,310.310] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:18:27,840.840] INFO [5784] - GET /camera_down - 307
+[2024-04-30 09:18:27,840.840] INFO [5784] - 127.0.0.1:30530 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:18:27,840.840] INFO [5784] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:18:28,011.011] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:28,011.011] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:28,013.013] INFO [5784] - GET /image - Completed in 0.001993 seconds
+[2024-04-30 09:18:28,478.478] INFO [5784] - GET /camera_down - 307
+[2024-04-30 09:18:28,478.478] INFO [5784] - 127.0.0.1:30530 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:18:28,478.478] INFO [5784] - GET /camera_down - Completed in 0.0 seconds
+[2024-04-30 09:18:28,637.637] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:28,637.637] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:28,639.639] INFO [5784] - GET /image - Completed in 0.001968 seconds
+[2024-04-30 09:18:29,301.301] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:18:29,301.301] INFO [5784] - 127.0.0.1:30530 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:18:29,301.301] INFO [5784] - GET /camera_home - Completed in 0.0 seconds
+[2024-04-30 09:18:29,478.478] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:29,478.478] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:29,480.480] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:18:29,965.965] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:18:29,965.965] INFO [5784] - 127.0.0.1:30530 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:18:29,965.965] INFO [5784] - GET /camera_home - Completed in 0.000999 seconds
+[2024-04-30 09:18:30,197.197] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:30,197.197] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:30,199.199] INFO [5784] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:18:30,748.748] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:18:30,749.749] INFO [5784] - 127.0.0.1:30530 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:18:30,749.749] INFO [5784] - GET /camera_home - Completed in 0.000997 seconds
+[2024-04-30 09:18:30,932.932] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:30,932.932] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:30,934.934] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:18:31,358.358] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:18:31,358.358] INFO [5784] - 127.0.0.1:30530 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:18:31,359.359] INFO [5784] - GET /camera_home - Completed in 0.001021 seconds
+[2024-04-30 09:18:31,563.563] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:31,563.563] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:31,566.566] INFO [5784] - GET /image - Completed in 0.002993 seconds
+[2024-04-30 09:18:31,964.964] INFO [5784] - GET /camera_home - 307
+[2024-04-30 09:18:31,964.964] INFO [5784] - 127.0.0.1:30530 - "GET /camera_home HTTP/1.1" 307
+[2024-04-30 09:18:31,965.965] INFO [5784] - GET /camera_home - Completed in 0.000998 seconds
+[2024-04-30 09:18:32,123.123] INFO [5784] - GET /image - 200
+[2024-04-30 09:18:32,123.123] INFO [5784] - 127.0.0.1:30530 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:18:32,125.125] INFO [5784] - GET /image - Completed in 0.002994 seconds
+[2024-04-30 09:24:36,024.024] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:24:36,024.024] INFO [5784] - 127.0.0.1:31499 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:24:36,024.024] INFO [5784] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:24:36,240.240] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:36,240.240] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:36,242.242] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:24:36,950.950] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:24:36,950.950] INFO [5784] - 127.0.0.1:31499 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:24:36,950.950] INFO [5784] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:24:37,147.147] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:37,147.147] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:37,149.149] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:24:37,628.628] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:24:37,628.628] INFO [5784] - 127.0.0.1:31499 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:24:37,628.628] INFO [5784] - GET /camera_up - Completed in 0.0 seconds
+[2024-04-30 09:24:37,791.791] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:37,792.792] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:37,793.793] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:24:38,188.188] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:24:38,188.188] INFO [5784] - 127.0.0.1:31499 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:24:38,188.188] INFO [5784] - GET /camera_up - Completed in 0.000997 seconds
+[2024-04-30 09:24:38,365.365] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:38,365.365] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:38,367.367] INFO [5784] - GET /image - Completed in 0.001996 seconds
+[2024-04-30 09:24:38,780.780] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:24:38,781.781] INFO [5784] - 127.0.0.1:31499 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:24:38,781.781] INFO [5784] - GET /camera_up - Completed in 0.000997 seconds
+[2024-04-30 09:24:38,942.942] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:38,942.942] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:38,943.943] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:24:39,644.644] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:24:39,644.644] INFO [5784] - 127.0.0.1:31499 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:24:39,644.644] INFO [5784] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:24:39,824.824] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:39,824.824] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:39,826.826] INFO [5784] - GET /image - Completed in 0.002992 seconds
+[2024-04-30 09:24:40,156.156] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:24:40,156.156] INFO [5784] - 127.0.0.1:31499 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:24:40,156.156] INFO [5784] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:24:40,326.326] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:40,326.326] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:40,328.328] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:24:41,035.035] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:24:41,035.035] INFO [5784] - 127.0.0.1:31499 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:24:41,036.036] INFO [5784] - GET /camera_right - Completed in 0.001031 seconds
+[2024-04-30 09:24:41,193.193] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:41,193.193] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:41,195.195] INFO [5784] - GET /image - Completed in 0.001999 seconds
+[2024-04-30 09:24:41,484.484] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:24:41,484.484] INFO [5784] - 127.0.0.1:31499 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:24:41,485.485] INFO [5784] - GET /camera_right - Completed in 0.000997 seconds
+[2024-04-30 09:24:41,662.662] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:41,662.662] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:41,663.663] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:24:41,982.982] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:24:41,982.982] INFO [5784] - 127.0.0.1:31499 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:24:41,982.982] INFO [5784] - GET /camera_right - Completed in 0.0 seconds
+[2024-04-30 09:24:42,154.154] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:42,154.154] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:42,156.156] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:24:42,803.803] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:24:42,803.803] INFO [5784] - 127.0.0.1:31499 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:24:42,803.803] INFO [5784] - GET /camera_left - Completed in 0.0 seconds
+[2024-04-30 09:24:42,967.967] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:42,967.967] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:42,969.969] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:24:43,565.565] INFO [5784] - GET /camera_up - 307
+[2024-04-30 09:24:43,565.565] INFO [5784] - 127.0.0.1:31499 - "GET /camera_up HTTP/1.1" 307
+[2024-04-30 09:24:43,565.565] INFO [5784] - GET /camera_up - Completed in 0.001005 seconds
+[2024-04-30 09:24:43,730.730] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:43,730.730] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:43,731.731] INFO [5784] - GET /image - Completed in 0.001994 seconds
+[2024-04-30 09:24:44,227.227] INFO [5784] - GET /camera_down - 307
+[2024-04-30 09:24:44,228.228] INFO [5784] - 127.0.0.1:31499 - "GET /camera_down HTTP/1.1" 307
+[2024-04-30 09:24:44,228.228] INFO [5784] - GET /camera_down - Completed in 0.000998 seconds
+[2024-04-30 09:24:44,408.408] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:44,408.408] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:44,409.409] INFO [5784] - GET /image - Completed in 0.001995 seconds
+[2024-04-30 09:24:45,059.059] INFO [5784] - GET /camera_left - 307
+[2024-04-30 09:24:45,060.060] INFO [5784] - 127.0.0.1:31499 - "GET /camera_left HTTP/1.1" 307
+[2024-04-30 09:24:45,060.060] INFO [5784] - GET /camera_left - Completed in 0.000997 seconds
+[2024-04-30 09:24:45,251.251] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:45,251.251] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:45,253.253] INFO [5784] - GET /image - Completed in 0.001999 seconds
+[2024-04-30 09:24:45,667.667] INFO [5784] - GET /camera_right - 307
+[2024-04-30 09:24:45,667.667] INFO [5784] - 127.0.0.1:31499 - "GET /camera_right HTTP/1.1" 307
+[2024-04-30 09:24:45,667.667] INFO [5784] - GET /camera_right - Completed in 0.000993 seconds
+[2024-04-30 09:24:45,836.836] INFO [5784] - GET /image - 200
+[2024-04-30 09:24:45,836.836] INFO [5784] - 127.0.0.1:31499 - "GET /image HTTP/1.1" 200
+[2024-04-30 09:24:45,838.838] INFO [5784] - GET /image - Completed in 0.002991 seconds
