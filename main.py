@@ -6,16 +6,22 @@ from urllib import request
 from fastapi.responses import FileResponse
 from fastapi.responses import RedirectResponse
 from fastapi import FastAPI, Response
-import numpy as np
-import uvicorn
 import cv2
+import uvicorn
+from utils import *
+
 WP_PORT="10004"
 WP_CAMERA_PAGE = "Camera1"
+
+#Set to true if emulate hardware
+EMUL=True
+#EMUL=False
+
 cwd = pathlib.Path(__file__).parent.resolve()
-# Step 1: Setup Logging Configuration
+# Setup Logging Configuration
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
 
-# Step 2: Create FastAPI Middleware
+# Create FastAPI Middleware
 class LoggingMiddleware:
     def __init__(self, app):
         self.app = app
@@ -40,6 +46,15 @@ class LoggingMiddleware:
 
 app = FastAPI()
 app.add_middleware(LoggingMiddleware)
+if EMUL:
+    emul_camera_controller = CameraController()
+
+
+# Perform random movements and capture images
+#num_movements = 5  # Number of random movements
+#movements = [camera_controller.move_left, camera_controller.move_right, camera_controller.move_up,
+#             camera_controller.move_down]
+
 
 
 
@@ -97,16 +112,35 @@ async def slow_left():
     return ""
 
 @app.get("/camera_up")
-async def capture_image():
+async def camera_up():
+    if EMUL: emul_camera_controller.move_up()
+    else: real_cam_move_up()
     return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
+@app.get("/camera_down")
+async def camera_down():
+    if EMUL: emul_camera_controller.move_down()
+    else: real_cam_move_down()
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+
+@app.get("/camera_left")
+async def camera_left():
+    if EMUL: emul_camera_controller.move_left()
+    else: real_cam_move_left()
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+
+@app.get("/camera_right")
+async def camera_right():
+    if EMUL: emul_camera_controller.move_right()
+    else: real_cam_move_right()
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/capture")
 async def capture_image():
     # Define the coordinates of the rectangle region (x, y, width, height)
 
     x, y, w, h = 100, 100, 400, 300
-    save_path = "static/image.jpg"
+    save_path = "app/static/image.jpg"
     frame = grab_camera_image()
     _, jpeg = cv2.imencode(".jpg", frame)
     #frame = generate_osd_frame(frame,x, y, w, h,"")
@@ -129,7 +163,7 @@ async def health_check():
 
 @app.get("/image")
 async def get_image():
-    return FileResponse("static/image.jpg")
+    return FileResponse("app/static/image.jpg")
 @app.get("/logs")
 async def read_last_logs():
     try:
@@ -144,6 +178,7 @@ async def read_last_logs():
 
 
 if __name__ == '__main__':
+
     uvicorn.run(app, port=80, host='0.0.0.0', log_config=f"log.ini")
 
 
