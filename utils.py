@@ -105,3 +105,6 @@ def real_cam_move_left():
 
 def real_cam_move_right():
     pass
+
+def real_cam_move_home():
+    pass

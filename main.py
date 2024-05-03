@@ -13,7 +13,7 @@ from utils import *
 WP_PORT="10004"
 WP_CAMERA_PAGE = "Camera1"
 
-#Set to true if emulate hardware
+#Set to true if emulate moving hardware. Using big.png as source, cropping it .
 EMUL=True
 #EMUL=False
 
@@ -111,6 +111,10 @@ def redirect_url(default='index'):
 async def slow_left():
     return ""
 
+@app.get("/camera_home")
+async def camera_up():
+    real_cam_move_home()
+    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 @app.get("/camera_up")
 async def camera_up():
     if EMUL: emul_camera_controller.move_up()

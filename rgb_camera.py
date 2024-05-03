@@ -3,7 +3,7 @@ import time
 import numpy as np
 
 """
-save frame every (duration) seconds 
+save frame every (duration) seconds , stand alone parallel process for normal functioning
 """
 def capture_and_save_photos(file_name, duration):
     # Initialize the camera

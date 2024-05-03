@@ -42,3 +42,4 @@ Camera emulate software https://obsproject.com/download
 
 Use Slimjet fast browser Press F12, Go to Network > check disable cache
 
+Mobile App Testing  - disable Win FireWall ( temporary ? ; )))
