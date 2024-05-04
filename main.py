@@ -2,10 +2,10 @@ import pathlib
 from datetime import datetime
 import logging
 from urllib import request
-
+import time
 from fastapi.responses import FileResponse
 from fastapi.responses import RedirectResponse
-from fastapi import FastAPI, Response
+from fastapi import FastAPI, Response, Query
 import cv2
 import uvicorn
 from utils import *
@@ -106,6 +106,11 @@ def redirect_url(default='index'):
     return request.args.get('next') or \
            request.referrer
 
+@app.get("/delete_requests")
+async def clear_requests():
+    global requests
+    requests = []
+    return {"message": "All requests cleared successfully"}
 
 @app.get("/slow_left")
 async def slow_left():
@@ -116,10 +121,19 @@ async def camera_up():
     real_cam_move_home()
     return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 @app.get("/camera_up")
-async def camera_up():
-    if EMUL: emul_camera_controller.move_up()
-    else: real_cam_move_up()
-    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+async def camera_up(param: str = Query(None)):
+    if EMUL:
+        emul_camera_controller.move_up()
+    else:
+        real_cam_move_up()
+    if param is not None:
+        global requests
+        requests = []
+        time.sleep(1)
+        return {"message": "OK"}
+
+    else:
+        return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/camera_down")
 async def camera_down():

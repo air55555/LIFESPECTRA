@@ -1678,6 +1678,205 @@ h11._util.LocalProtocolError: Too little data for declared Content-Length
 [2024-04-29 23:29:13,098.098] INFO [10152] - GET /image - 200
 [2024-04-29 23:29:13,100.100] INFO [10152] - 127.0.0.1:50989 - "GET /image HTTP/1.1" 200
 [2024-04-29 23:29:13,192.192] INFO [10152] - GET /image - Completed in 0.097952 seconds
+[2024-05-01 11:56:32,594.594] INFO [3948] - GET /image - 200
+[2024-05-01 11:56:32,594.594] INFO [3948] - 192.168.0.100:43020 - "GET /image HTTP/1.1" 200
+[2024-05-01 11:56:32,625.625] INFO [3948] - GET /image - Completed in 0.031189 seconds
+[2024-05-01 11:56:33,140.140] INFO [3948] - GET /favicon.ico - 404
+[2024-05-01 11:56:33,140.140] INFO [3948] - 192.168.0.100:43020 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 11:56:33,155.155] INFO [3948] - GET /favicon.ico - Completed in 0.015559 seconds
+[2024-05-01 11:56:56,675.675] INFO [3948] - GET /image - 200
+[2024-05-01 11:56:56,675.675] INFO [3948] - 127.0.0.1:49911 - "GET /image HTTP/1.1" 200
+[2024-05-01 11:56:56,690.690] INFO [3948] - GET /image - Completed in 0.015479 seconds
+[2024-05-01 11:57:02,656.656] INFO [3948] - GET /image - 200
+[2024-05-01 11:57:02,656.656] INFO [3948] - 127.0.0.1:49912 - "GET /image HTTP/1.1" 200
+[2024-05-01 11:57:02,673.673] INFO [3948] - GET /image - Completed in 0.028791 seconds
+[2024-05-01 12:04:26,403.403] INFO [3948] - GET /image - 200
+[2024-05-01 12:04:26,403.403] INFO [3948] - 192.168.0.100:43218 - "GET /image HTTP/1.1" 200
+[2024-05-01 12:04:26,411.411] INFO [3948] - GET /image - Completed in 0.008124 seconds
+[2024-05-01 12:04:26,720.720] INFO [3948] - GET /favicon.ico - 404
+[2024-05-01 12:04:26,720.720] INFO [3948] - 192.168.0.100:43218 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 12:04:26,728.728] INFO [3948] - GET /favicon.ico - Completed in 0.008009 seconds
+[2024-05-01 12:10:37,384.384] INFO [3948] - Shutting down
+[2024-05-01 12:10:37,494.494] INFO [3948] - Waiting for application shutdown.
+[2024-05-01 12:10:37,494.494] INFO [3948] - Application shutdown complete.
+[2024-05-01 12:10:37,494.494] INFO [3948] - Finished server process [2160]
+[2024-05-01 13:51:32,678.678] INFO [2060] - Started server process [3876]
+[2024-05-01 13:51:32,678.678] INFO [2060] - Waiting for application startup.
+[2024-05-01 13:51:32,678.678] INFO [2060] - Application startup complete.
+[2024-05-01 13:51:32,694.694] INFO [2060] - Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+[2024-05-01 13:51:34,817.817] INFO [2060] - GET /image - 200
+[2024-05-01 13:51:34,817.817] INFO [2060] - 192.168.0.100:44590 - "GET /image HTTP/1.1" 200
+[2024-05-01 13:51:34,833.833] INFO [2060] - GET /image - Completed in 0.628725 seconds
+[2024-05-01 13:51:35,147.147] INFO [2060] - GET /favicon.ico - 404
+[2024-05-01 13:51:35,147.147] INFO [2060] - 192.168.0.100:44590 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 13:51:35,147.147] INFO [2060] - GET /favicon.ico - Completed in 0.0 seconds
+[2024-05-01 13:53:14,485.485] INFO [2060] - GET /favicon.ico - 404
+[2024-05-01 13:53:14,485.485] INFO [2060] - 192.168.0.100:44612 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 13:53:14,489.489] INFO [2060] - GET /favicon.ico - Completed in 0.004203 seconds
+[2024-05-01 13:53:17,949.949] INFO [2060] - GET /favicon.ico - 404
+[2024-05-01 13:53:17,949.949] INFO [2060] - 192.168.0.100:44612 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 13:53:17,949.949] INFO [2060] - GET /favicon.ico - Completed in 0.0 seconds
+[2024-05-01 13:55:25,676.676] INFO [2060] - GET /favicon.ico - 404
+[2024-05-01 13:55:25,692.692] INFO [2060] - 192.168.0.100:44620 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 13:55:25,692.692] INFO [2060] - GET /favicon.ico - Completed in 0.015998 seconds
+[2024-05-01 13:55:35,828.828] INFO [2060] - GET /favicon.ico - 404
+[2024-05-01 13:55:35,828.828] INFO [2060] - 192.168.0.100:44622 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 13:55:35,828.828] INFO [2060] - GET /favicon.ico - Completed in 0.0 seconds
+[2024-05-01 13:59:09,548.548] INFO [2060] - GET /image - 200
+[2024-05-01 13:59:09,548.548] INFO [2060] - 127.0.0.1:50021 - "GET /image HTTP/1.1" 200
+[2024-05-01 13:59:09,556.556] INFO [2060] - GET /image - Completed in 0.016 seconds
+[2024-05-01 14:13:57,907.907] INFO [2060] - GET /image - 200
+[2024-05-01 14:13:57,907.907] INFO [2060] - 192.168.0.100:44886 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:13:57,907.907] INFO [2060] - GET /image - Completed in 0.0 seconds
+[2024-05-01 14:13:58,395.395] INFO [2060] - GET /favicon.ico - 404
+[2024-05-01 14:13:58,396.396] INFO [2060] - 192.168.0.100:44886 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 14:13:58,397.397] INFO [2060] - GET /favicon.ico - Completed in 0.002963 seconds
+[2024-05-01 14:27:08,068.068] INFO [2060] - GET /favicon.ico - 404
+[2024-05-01 14:27:08,068.068] INFO [2060] - 192.168.0.100:45012 - "GET /favicon.ico HTTP/1.1" 404
+[2024-05-01 14:27:08,068.068] INFO [2060] - GET /favicon.ico - Completed in 0.0 seconds
+[2024-05-01 14:38:37,147.147] INFO [2060] - GET /image - 200
+[2024-05-01 14:38:37,148.148] INFO [2060] - 127.0.0.1:50120 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:38:37,157.157] INFO [2060] - GET /image - Completed in 0.014229 seconds
+[2024-05-01 14:38:41,389.389] INFO [2060] - GET /image - 200
+[2024-05-01 14:38:41,389.389] INFO [2060] - 127.0.0.1:50120 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:38:41,409.409] INFO [2060] - GET /image - Completed in 0.026557 seconds
+[2024-05-01 14:40:40,648.648] INFO [2060] - GET /image - 200
+[2024-05-01 14:40:40,649.649] INFO [2060] - 127.0.0.1:50126 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:40:40,703.703] INFO [2060] - GET /image - Completed in 0.057957 seconds
+[2024-05-01 14:40:43,776.776] INFO [2060] - GET /image - 200
+[2024-05-01 14:40:43,778.778] INFO [2060] - 127.0.0.1:50126 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:40:43,845.845] INFO [2060] - GET /image - Completed in 0.07396 seconds
+[2024-05-01 14:40:45,048.048] INFO [2060] - GET /image - 200
+[2024-05-01 14:40:45,049.049] INFO [2060] - 127.0.0.1:50126 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:40:45,122.122] INFO [2060] - GET /image - Completed in 0.076072 seconds
+[2024-05-01 14:40:46,144.144] INFO [2060] - GET /image - 200
+[2024-05-01 14:40:46,146.146] INFO [2060] - 127.0.0.1:50126 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:40:46,234.234] ERROR [2060] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 511, in send
+    output = self.conn.send(event=h11.EndOfMessage())
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 67, in __call__
+    self.send_eom(event.headers, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 96, in send_eom
+    raise LocalProtocolError("Too little data for declared Content-Length")
+h11._util.LocalProtocolError: Too little data for declared Content-Length
+[2024-05-01 14:40:47,397.397] INFO [2060] - GET /image - 200
+[2024-05-01 14:40:47,399.399] INFO [2060] - 127.0.0.1:50127 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:40:47,474.474] ERROR [2060] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 32, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\routing.py", line 75, in app
+    await response(scope, receive, send)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\responses.py", line 352, in __call__
+    await send(
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\_exception_handler.py", line 50, in sender
+    await send(message)
+  File "C:/Users/1/PycharmProjects/LIFESPECTRA/app/main.py", line 30, in send_wrapper
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 504, in send
+    output = self.conn.send(event=h11.Data(data=data))
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 512, in send
+    data_list = self.send_with_data_passthrough(event)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_connection.py", line 545, in send_with_data_passthrough
+    writer(event, data_list.append)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 65, in __call__
+    self.send_data(event.data, write)
+  File "C:\Users\1\miniconda3\envs\LIFESPECTRA\lib\site-packages\h11\_writers.py", line 91, in send_data
+    raise LocalProtocolError("Too much data for declared Content-Length")
+h11._util.LocalProtocolError: Too much data for declared Content-Length
+[2024-05-01 14:40:49,434.434] INFO [2060] - GET /image - 200
+[2024-05-01 14:40:49,435.435] INFO [2060] - 127.0.0.1:50130 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:40:49,478.478] INFO [2060] - GET /image - Completed in 0.046678 seconds
+[2024-05-01 14:43:56,766.766] INFO [2060] - GET /image - 200
+[2024-05-01 14:43:56,766.766] INFO [2060] - 127.0.0.1:50135 - "GET /image HTTP/1.1" 200
+[2024-05-01 14:43:56,782.782] INFO [2060] - GET /image - Completed in 0.015925 seconds
+[2024-05-01 20:17:18,490.490] INFO [2060] - Shutting down
+[2024-05-01 20:17:18,599.599] INFO [2060] - Waiting for application shutdown.
+[2024-05-01 20:17:18,599.599] INFO [2060] - Application shutdown complete.
+[2024-05-01 20:17:18,599.599] INFO [2060] - Finished server process [3876]
 [2024-04-30 09:09:46,361.361] INFO [4992] - Started server process [21412]
 [2024-04-30 09:09:46,362.362] INFO [4992] - Waiting for application startup.
 [2024-04-30 09:09:46,362.362] INFO [4992] - Application startup complete.
