@@ -47,13 +47,13 @@ Emulator class
 """
 class CameraController:
     def __init__(self):
-        self.current_position = (550, 550)
-        self.large_image = cv2.imread("test_data/big.png")
+        self.current_position = (1550, 1550)
+        self.large_image = cv2.imread("test_data/big1.png")
 
     # Function to move the camera to the left
     def move_left(self):
         new_position = (self.current_position[0] - MOVE_DISTANCE, self.current_position[1])
-        if (new_position[0] > 3200 or new_position[0] > 4600): new_position = (550, 550)
+        if (new_position[0] > 3200 or new_position[1] > 3200): new_position = (1550, 1550)
         new_image = self.large_image[self.current_position[1]:self.current_position[1] + IMAGE_HEIGHT, new_position[0]:new_position[0] + IMAGE_WIDTH]
         self.current_position = new_position
         self.save_image(new_image, "app/static/image.jpg")
@@ -62,6 +62,7 @@ class CameraController:
     # Function to move the camera to the right
     def move_right(self):
         new_position = (self.current_position[0] + MOVE_DISTANCE, self.current_position[1])
+        if (new_position[0] > 4600 or new_position[1] > 3200 or new_position[0]<0 or new_position[1]<0): new_position = (1550, 1550)
         new_image = self.large_image[self.current_position[1]:self.current_position[1] + IMAGE_HEIGHT, new_position[0]:new_position[0] + IMAGE_WIDTH]
         self.current_position = new_position
         self.save_image(new_image, "app/static/image.jpg")
@@ -80,6 +81,7 @@ class CameraController:
     # Function to move the camera down
     def move_down(self):
         new_position = (self.current_position[0], self.current_position[1] + MOVE_DISTANCE)
+        if (new_position[0] > 4600 or new_position[1] > 3200 or new_position[0]<0 or new_position[1]<0): new_position = (1550, 1550)
         new_image = self.large_image[self.current_position[1]:self.current_position[1] + IMAGE_HEIGHT, new_position[0]:new_position[0] + IMAGE_WIDTH]
         self.current_position = new_position
         self.save_image(new_image, "app/static/image.jpg")

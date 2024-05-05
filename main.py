@@ -5,10 +5,14 @@ from urllib import request
 import time
 from fastapi.responses import FileResponse
 from fastapi.responses import RedirectResponse
-from fastapi import FastAPI, Response, Query
+from fastapi import  Query
 import cv2
 import uvicorn
 from utils import *
+import os
+import base64
+from fastapi import FastAPI, File
+from fastapi.responses import JSONResponse
 
 WP_PORT="10004"
 WP_CAMERA_PAGE = "Camera1"
@@ -50,61 +54,7 @@ if EMUL:
     emul_camera_controller = CameraController()
 
 
-# Perform random movements and capture images
-#num_movements = 5  # Number of random movements
-#movements = [camera_controller.move_left, camera_controller.move_right, camera_controller.move_up,
-#             camera_controller.move_down]
 
-
-
-
-def generate_osd_frame(frame,x, y, w, h,text):
-    # Define the coordinates of the rectangle region (x, y, width, height)
-
-    # Copy the original frame to prevent modification of the original image
-    osd_frame = frame.copy()
-
-    # Add text to the OSD frame
-    #text = "Recording"  # Example text
-    text_position = (50, 50)  # Position of the text
-    font = cv2.FONT_HERSHEY_SIMPLEX
-    font_scale = 1
-    color = (255, 255, 255)  # White color
-    thickness = 2
-    cv2.putText(osd_frame, text, text_position, font, font_scale, color, thickness)
-
-    # Add a rectangle border to the OSD frame
-    border_color = (0, 0, 255)  # Red color
-    border_thickness = 2
-    cv2.rectangle(osd_frame, (x, y), (x+w, y+h), border_color, border_thickness)
-
-    return osd_frame
-
-def blur_outside_rectangle(frame, x, y, w, h):
-    # Create a mask with the same size as the frame
-    mask = np.zeros_like(frame, dtype=np.uint8)
-
-    # Define the rectangle region in the mask
-    cv2.rectangle(mask, (x, y), (x + w, y + h), (255, 255, 255), -1)
-
-    # Apply blur effect to the area outside the rectangle
-    blurred_frame = cv2.blur(frame, (21, 21))
-
-    # Apply the mask to blur only outside the rectangle
-    result = cv2.bitwise_and(frame, mask)
-    result += cv2.bitwise_and(blurred_frame, cv2.bitwise_not(mask))
-
-    return result
-
-def grab_camera_image():
-    cap = cv2.VideoCapture(0)
-    ret, frame = cap.read()
-    cap.release()
-    return frame
-
-def redirect_url(default='index'):
-    return request.args.get('next') or \
-           request.referrer
 
 @app.get("/delete_requests")
 async def clear_requests():
@@ -127,49 +77,42 @@ async def camera_up(param: str = Query(None)):
     else:
         real_cam_move_up()
     if param is not None:
-        global requests
-        requests = []
-        time.sleep(1)
         return {"message": "OK"}
-
     else:
         return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/camera_down")
-async def camera_down():
-    if EMUL: emul_camera_controller.move_down()
-    else: real_cam_move_down()
-    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+async def camera_down(param: str = Query(None)):
+    if EMUL:
+        emul_camera_controller.move_down()
+    else:
+        real_cam_move_down()
+    if param is not None:
+        return {"message": "OK"}
+    else:
+        return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/camera_left")
-async def camera_left():
-    if EMUL: emul_camera_controller.move_left()
-    else: real_cam_move_left()
-    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+async def camera_left(param: str = Query(None)):
+    if EMUL:
+        emul_camera_controller.move_left()
+    else:
+        real_cam_move_left()
+    if param is not None:
+        return {"message": "OK"}
+    else:
+        return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/camera_right")
-async def camera_right():
-    if EMUL: emul_camera_controller.move_right()
-    else: real_cam_move_right()
-    return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
-
-@app.get("/capture")
-async def capture_image():
-    # Define the coordinates of the rectangle region (x, y, width, height)
-
-    x, y, w, h = 100, 100, 400, 300
-    save_path = "app/static/image.jpg"
-    frame = grab_camera_image()
-    _, jpeg = cv2.imencode(".jpg", frame)
-    #frame = generate_osd_frame(frame,x, y, w, h,"")
-    frame=blur_outside_rectangle(frame, x, y, w, h)
-    frame = generate_osd_frame(frame, x, y, w, h, "")
-    cv2.imwrite(save_path, frame)
-
-    # Return a response indicating the image path
-    #return {"message": "Image captured successfully", "image_path": save_path}
-    return RedirectResponse("http://localhost:10005/camera-move/")
-    #return StreamingResponse(content=jpeg.tobytes(), media_type="image/jpeg")
+async def camera_right(param: str = Query(None)):
+    if EMUL:
+        emul_camera_controller.move_right()
+    else:
+        real_cam_move_right()
+    if param is not None:
+        return {"message": "OK"}
+    else:
+        return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
 
 @app.get("/")
 async def read_root():
@@ -194,6 +137,24 @@ async def read_last_logs():
     except FileNotFoundError:
         return {"error": "Log file not found."}
 
+@app.get("/image64")
+async def get_image():
+    image_path = "app/static/image.jpg"
+    if os.path.exists(image_path):
+        # Read the image
+        image = cv2.imread(image_path)
+
+        # Resize the image to 320x240
+        resized_image = cv2.resize(image, (320, 240))
+        resized_image = generate_osd_frame(resized_image, 100, 100, 100, 100, "small")
+        # Encode the resized image as base64
+        _, encoded_image = cv2.imencode('.jpg', resized_image)
+        image_base64 = base64.b64encode(encoded_image).decode("utf-8")
+
+        # Return the base64 image as JSON
+        return JSONResponse(content={"image_base64": image_base64})
+    else:
+        return JSONResponse(content={"error": "Image not found"}, status_code=404)
 
 if __name__ == '__main__':
 
