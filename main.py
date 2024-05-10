@@ -50,6 +50,7 @@ class LoggingMiddleware:
 
 app = FastAPI()
 app.add_middleware(LoggingMiddleware)
+print(f'IP address  of backend server {get_ip()}')
 if EMUL:
     emul_camera_controller = CameraController()
 

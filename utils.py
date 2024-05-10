@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+import socket
 
 def generate_osd_frame(frame,x, y, w, h,text):
     # Define the coordinates of the rectangle region (x, y, width, height)
@@ -110,3 +111,16 @@ def real_cam_move_right():
 
 def real_cam_move_home():
     pass
+
+def get_ip():
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.settimeout(0)
+    try:
+        # doesn't even have to be reachable
+        s.connect(('10.254.254.254', 1))
+        IP = s.getsockname()[0]
+    except Exception:
+        IP = '127.0.0.1'
+    finally:
+        s.close()
+    return IP
