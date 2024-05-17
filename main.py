@@ -70,7 +70,7 @@ print(f'IP address of backend server {get_ip()}')
 async def rate_limiting_middleware(request: Request, call_next):
     global last_request_time
     current_time = time.time() * 1000  # convert to milliseconds
-    if request.url.components.path!="/image_small":
+    if request.url.components.path=="/iiimage_small":
         if current_time - last_request_time < rate_limit_window:
             #pass
             logging.warning("Rate limit exceeded. Please try again later.")
@@ -175,7 +175,7 @@ async def get_image():
         resized_image = generate_osd_frame(resized_image, 100, 100, 100, 100, "small")
         # Encode the resized image as base64
         _, encoded_image = cv2.imencode('.jpg', resized_image)
-        cv2.imwrite("app/static/image_small.jpg", resized_image)
+        cv2.imwrite("app/static/image_small.jpg", resized_image,[cv2.IMWRITE_JPEG_QUALITY, 1])
     return FileResponse("app/static/image_small.jpg")
 @app.get("/image")
 async def get_image():
@@ -194,6 +194,9 @@ async def read_last_logs():
 
 @app.get("/image64")
 async def get_image():
+    """
+    base64 encoded string
+    """
     image_path = "app/static/image.jpg"
     if os.path.exists(image_path):
         # Read the image
