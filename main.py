@@ -19,7 +19,7 @@ cwd = pathlib.Path(__file__).parent.resolve()
 EMUL = True  # Set to True if emulating moving hardware
 
 app = FastAPI()
-rate_limit_window = 300  # milliseconds
+rate_limit_window = 500  # milliseconds
 last_request_time = 0
 
 # Setup Logging Configuration
@@ -70,7 +70,7 @@ print(f'IP address of backend server {get_ip()}')
 async def rate_limiting_middleware(request: Request, call_next):
     global last_request_time
     current_time = time.time() * 1000  # convert to milliseconds
-    if request.url.components.path!="/image64":
+    if request.url.components.path!="/image_small":
         if current_time - last_request_time < rate_limit_window:
             #pass
             logging.warning("Rate limit exceeded. Please try again later.")
@@ -163,6 +163,20 @@ async def read_root():
 async def health_check():
     return "Server OK", 200
 
+@app.get("/image_small")
+async def get_image():
+    image_path = "app/static/image.jpg"
+    if os.path.exists(image_path):
+        # Read the image
+        image = cv2.imread(image_path)
+
+        # Resize the image to 320x240
+        resized_image = cv2.resize(image, (320, 240))
+        resized_image = generate_osd_frame(resized_image, 100, 100, 100, 100, "small")
+        # Encode the resized image as base64
+        _, encoded_image = cv2.imencode('.jpg', resized_image)
+        cv2.imwrite("app/static/image_small.jpg", resized_image)
+    return FileResponse("app/static/image_small.jpg")
 @app.get("/image")
 async def get_image():
     return FileResponse("app/static/image.jpg")
