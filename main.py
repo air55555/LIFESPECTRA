@@ -1,31 +1,49 @@
+import asyncio
+from fastapi import FastAPI, Request, HTTPException, Query, File
+from fastapi.responses import FileResponse, RedirectResponse, JSONResponse
 import pathlib
 from datetime import datetime
 import logging
-from urllib import request
-import time
-from fastapi.responses import FileResponse
-from fastapi.responses import RedirectResponse
-from fastapi import  Query
+from colorlog import ColoredFormatter
 import cv2
 import uvicorn
-from utils import *
 import os
 import base64
-from fastapi import FastAPI, File
-from fastapi.responses import JSONResponse
+from utils import *
+from collections import deque
+import time
 
-WP_PORT="10004"
+WP_PORT = "10004"
 WP_CAMERA_PAGE = "Camera1"
-
-#Set to true if emulate moving hardware. Using big.png as source, cropping it .
-EMUL=True
-#EMUL=False
-
 cwd = pathlib.Path(__file__).parent.resolve()
-# Setup Logging Configuration
-logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
+EMUL = True  # Set to True if emulating moving hardware
 
-# Create FastAPI Middleware
+app = FastAPI()
+rate_limit_window = 300  # milliseconds
+last_request_time = 0
+
+# Setup Logging Configuration
+log_format = '\033[34m%(asctime)s\033[0m - %(log_color)s%(levelname)s%(reset)s - %(message)s'
+date_format = '%Y-%m-%d %H:%M:%S'
+color_formatter = ColoredFormatter(
+    log_format,
+    date_format,
+    log_colors={
+        'DEBUG': 'cyan',
+        'INFO': 'green',
+        'WARNING': 'yellow',
+        'ERROR': 'red',
+        'CRITICAL': 'red,bg_white',
+    }
+)
+
+log_handler = logging.StreamHandler()
+log_handler.setFormatter(color_formatter)
+root_logger = logging.getLogger()
+root_logger.addHandler(log_handler)
+root_logger.setLevel(logging.INFO)
+
+# Create FastAPI logging Middleware
 class LoggingMiddleware:
     def __init__(self, app):
         self.app = app
@@ -33,29 +51,45 @@ class LoggingMiddleware:
     async def __call__(self, scope, receive, send):
         if scope['type'] == 'http':
             start_time = datetime.now()
-
             async def send_wrapper(message):
                 if message['type'] == 'http.response.start':
                     logging.info(f"{scope['method']} {scope['path']} - {message['status']}")
                 await send(message)
-
             await self.app(scope, receive, send_wrapper)
-
             end_time = datetime.now()
-            execution_time = end_time - start_time
-            logging.info(f"{scope['method']} {scope['path']} - Completed in {execution_time.total_seconds()} seconds")
+            execution_time = (end_time - start_time).total_seconds()
+            logging.info(f"{scope['method']} {scope['path']} - Completed in {execution_time} seconds")
         else:
             await self.app(scope, receive, send)
 
-
-app = FastAPI()
+# Add Logging Middleware
 app.add_middleware(LoggingMiddleware)
-print(f'IP address  of backend server {get_ip()}')
+print(f'IP address of backend server {get_ip()}')
+# Rate Limiting Middleware
+@app.middleware("http")
+async def rate_limiting_middleware(request: Request, call_next):
+    global last_request_time
+    current_time = time.time() * 1000  # convert to milliseconds
+    if request.url.components.path!="/image64":
+        if current_time - last_request_time < rate_limit_window:
+            #pass
+            logging.warning("Rate limit exceeded. Please try again later.")
+            return JSONResponse(status_code=429, content={"detail": "Rate limit exceeded. Please try again later."})
+    last_request_time = current_time
+    response = await call_next(request)
+    return response
+# async def rate_limiting_middleware(request: Request, call_next):
+#     global last_request_time
+#     current_time = time.time() * 1000  # convert to milliseconds
+#     if current_time - last_request_time < rate_limit_window:
+#         raise HTTPException(status_code=429, detail="Too many requests, please try again later.")
+#     last_request_time = current_time
+#     response = await call_next(request)
+#     return response
+
+# Emulated Camera Controller
 if EMUL:
     emul_camera_controller = CameraController()
-
-
-
 
 @app.get("/delete_requests")
 async def clear_requests():
@@ -68,9 +102,10 @@ async def slow_left():
     return ""
 
 @app.get("/camera_home")
-async def camera_up():
+async def camera_home():
     real_cam_move_home()
     return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+
 @app.get("/camera_up")
 async def camera_up(param: str = Query(None)):
     if EMUL:
@@ -113,7 +148,12 @@ async def camera_right(param: str = Query(None)):
     if param is not None:
         return {"message": "OK"}
     else:
-        return RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+        return  RedirectResponse(f"http://localhost:{WP_PORT}/{WP_CAMERA_PAGE}/")
+
+
+@app.get("/dummy")
+async def dummy():
+    pass
 
 @app.get("/")
 async def read_root():
