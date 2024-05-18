@@ -179,7 +179,7 @@ async def get_image():
         resized_image = generate_osd_frame(resized_image, 100, 100, 100, 100, "small")
         # Encode the resized image as base64
         _, encoded_image = cv2.imencode('.jpg', resized_image)
-        cv2.imwrite("app/static/image_small.jpg", resized_image,[cv2.IMWRITE_JPEG_QUALITY, 1])
+        cv2.imwrite("app/static/image_small.jpg", resized_image,[cv2.IMWRITE_JPEG_QUALITY, 90])
     return FileResponse("app/static/image_small.jpg")
 @app.get("/image")
 async def get_image():
