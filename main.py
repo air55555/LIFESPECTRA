@@ -100,6 +100,10 @@ async def clear_requests():
 @app.get("/slow_left")
 async def slow_left():
     return ""
+@app.get("/dummy")
+async def dummy():
+    pass
+
 
 @app.get("/camera_home")
 async def camera_home():
