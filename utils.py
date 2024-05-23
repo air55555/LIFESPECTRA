@@ -49,7 +49,7 @@ Emulator class
 class CameraController:
     def __init__(self):
         self.current_position = (1550, 1550)
-        self.large_image = cv2.imread("test_data/big11.png")
+        self.large_image = cv2.imread("test_data/big1.png")
 
     # Function to move the camera to the left
     def move_left(self):
