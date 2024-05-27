@@ -3,7 +3,7 @@ import spectral
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import mplcursors
-
+DIVIDE= 1
 # Загрузка данных
 img_filename = r"C:\PyProj\HSLidar\Datasets\ready\tuy.hdr"  # Имя файла с гиперспектральными данными ENVI
 hdr_img = spectral.open_image(img_filename)
@@ -13,8 +13,8 @@ lidar_filename = r"C:\PyProj\HSLidar\Datasets\ready\readyfoo.csv"  # Имя фа
 lidar_data = np.loadtxt(lidar_filename, delimiter=',')
 
 # Преобразование данных LiDAR в трехмерное пространство
-x, y = np.meshgrid(np.arange(0, 281, 5), np.arange(0, 128, 5))  # Используем срезы для уменьшения объема данных
-z = lidar_data[::5, ::5]  # Используем срезы для уменьшения объема данных
+x, y = np.meshgrid(np.arange(0, 281, DIVIDE), np.arange(0, 128, DIVIDE))  # Используем срезы для уменьшения объема данных
+z = lidar_data[::DIVIDE, ::DIVIDE]  # Используем срезы для уменьшения объема данных
 
 # Нормализация координат
 x_norm = (x / 280) * 1124
@@ -24,6 +24,8 @@ y_norm = (y / 127) * 1024
 fig = plt.figure(figsize=(10, 8))
 ax = fig.add_subplot(111, projection='3d')
 scatter = ax.scatter(x_norm.flatten(), y_norm.flatten(), z.flatten(), c=z.flatten(), cmap='jet', s=2)
+arr =np.transpose([x_norm.flatten(), y_norm.flatten(), z.flatten()])
+np.savetxt("foo.csv", arr, delimiter=",")
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
