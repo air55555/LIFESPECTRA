@@ -1,4 +1,6 @@
-import asyncio
+"""
+Backend server for LIFESPECTRA
+"""
 from fastapi import FastAPI, Request, HTTPException, Query, File
 from fastapi.responses import FileResponse, RedirectResponse, JSONResponse
 import pathlib
