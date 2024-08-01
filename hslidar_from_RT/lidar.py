@@ -3,8 +3,8 @@ from contextlib import closing
 import matplotlib.pyplot as plt
 from more_itertools import nth
 import numpy as np
-from statistics import mean
-import sys
+#from statistics import mean
+#import sys
 
 
 class Lidar:

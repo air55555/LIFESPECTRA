@@ -1,10 +1,10 @@
-import csv
-import time
+#import csv
+#import time
 import harvesters
 from harvesters.core import Harvester, ImageAcquirer
 from spectral import *
 import numpy as np
-import cv2
+#import cv2
 import h5py
 from datetime import datetime as dt
 import os
@@ -68,7 +68,7 @@ class Camera:
                 fr = (np.rot90(frame_2d))
             yield fr
 
-    def capturing(self, EXP: int, frames: int, data_name: str, FPS: int) -> Iterator[np.ndarray]:
+    def capturing(self, EXP: int, frames: int, data_name: str, FPS: int, posit) -> Iterator[np.ndarray]:
         dir_name = data_name if data_name else dt.now().strftime("%H_%M")
         if not os.path.exists(os.getcwd() + fr'\Datasets\{dir_name}'):
             os.mkdir(os.getcwd() + fr'\Datasets\{dir_name}')
@@ -85,8 +85,11 @@ class Camera:
                 h5_file.create_dataset(f"{frame}", data=Data)
                 frame_2d = Data.reshape(component.height, component.width)
                 fr = (np.rot90(frame_2d))
-            if frame != frames_number:
+            if frame != frames_number and ptr.get_current_position()>=posit:
                 yield fr
+            else:
+                break
+            # if scanner.Ptr().get_current_position() >=
 
         image_arr = self.frame_stitching(h5_file, frames)
         h5_file.close()

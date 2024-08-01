@@ -1,28 +1,28 @@
 import PySimpleGUI as sg
 import hspec_camera
 import scanner
-from math import tan, radians
+#from math import tan, radians
 import numpy as np
 import cv2
 from collections import deque
-from harvesters.core import Harvester
-import harvesters
-from spectral import *
-import os
-from matplotlib.ticker import NullFormatter
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+#from harvesters.core import Harvester
+#import harvesters
+#from spectral import *
+#import os
+#from matplotlib.ticker import NullFormatter
+#from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib
-import shutil
+#import shutil
 import lidar
-from statistics import mean
+#from statistics import mean
 import warnings
 
 warnings.simplefilter("ignore", ResourceWarning)
 matplotlib.use('TkAgg')
 
+def create_gen(expos: int, frames: int, name: str, specim, FPS, posit):
+    return specim.capturing(expos, frames, name, FPS, posit) if frames else specim.calibration(expos, FPS)
 
-def create_gen(expos: int, frames: int, name: str, specim, FPS):
-    return specim.capturing(expos, frames, name, FPS) if frames else specim.calibration(expos, FPS)
 def create_predefined_frame(width, height, text="sample", color=(255, 255, 255), font_scale=1.0, thickness=2):
   """
   Creates a predefined frame with text on it.
@@ -116,7 +116,7 @@ def App():
         [sg.Frame('VideoStream', videostream, font=BIG_FONT, title_location=sg.TITLE_LOCATION_TOP)]
     ]
 
-    window = sg.Window('Hyperspectral quality control system', layout, resizable=True, finalize=True,
+    window = sg.Window('SHYL', layout, resizable=True, finalize=True,
                        text_justification='right', auto_size_text=False, default_element_size=(21, 1),
                        font=MINI_FONT, button_color=BTN_COLOR, element_justification='c')
     window.Maximize()
@@ -124,11 +124,17 @@ def App():
     window['-RIGHT'].bind("<ButtonPress-1>", '-RIGHT_MOVE')
     window['-RIGHT'].bind("<ButtonRelease-1>", '-RIGHT_STOP')
 
+
     window['-LEFT'].bind("<ButtonPress-1>", '-LEFT_MOVE')
     window['-LEFT'].bind("<ButtonRelease-1>", '-LEFT_STOP')
 
+  #  window['-LEFT'].bind("<Left>", '-LEFT_MOVE')
+    #window['-LEFT'].bind("<ButtonRelease-1>", '-LEFT_STOP')
+
     window['-UP'].bind("<ButtonPress-1>", '-UP_MOVE')
     window['-UP'].bind("<ButtonRelease-1>", '-UP_STOP')
+
+
 
     window['-DOWN'].bind("<ButtonPress-1>", '-DOWN_MOVE')
     window['-DOWN'].bind("<ButtonRelease-1>", '-DOWN_STOP')
@@ -150,8 +156,8 @@ def App():
         if capture_state_flag == 0:
             ret, frame = cap.read()
             if frame is None:
-                width = 640
-                height = 480
+                width = 1280
+                height = 720
                 text = "Sample"
                 frame = create_predefined_frame(width, height, text)
 
@@ -256,7 +262,7 @@ def App():
                 hex_w = current_min_speed
                 print('vehicle for platform:  ', hex_w)
                 gen = create_gen(int(values['-EXPOS_VALUE']), n_frames, values['-DATA_NAME'], specim,
-                                 int(values['-FPS']))
+                                 int(values['-FPS']), int(values['-SET_END']))
 
             elif event == '-LIVE':
                 print('[INFO] Moving to calibration position...')
@@ -270,7 +276,7 @@ def App():
             #######################################################################################################
             ########################## CAPTURE GENERATORS #########################################################
             #######################################################################################################
-
+            #print(ptr.get_current_position())
             if calb_flag == 1:
                 a = next(gen_calb)
 
